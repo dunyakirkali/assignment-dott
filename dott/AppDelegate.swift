@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 private extension AppDelegate {
     func setupLocationManager() {
         locationManager.delegate = self
-//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestLocation()
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
