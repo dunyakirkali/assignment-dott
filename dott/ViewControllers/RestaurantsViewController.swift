@@ -37,7 +37,7 @@ extension RestaurantsViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        fetchVenues()
+//        fetchVenues()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -50,9 +50,9 @@ extension RestaurantsViewController {
 // MARK: - StoreSubscriber
 extension RestaurantsViewController: StoreSubscriber {
     func newState(state: AppState) {
-        if let location = state.currentLocation {
-            mapView.setCenter(location.coordinate, animated: true)
-        }
+//        if let location = state.currentLocation {
+//            mapView.setCenter(location.coordinate, animated: true)
+//        }
         reloadData(venues: state.venues)
     }
 }
@@ -98,9 +98,10 @@ private extension RestaurantsViewController {
                     )
                 }
             case .failure:
-                mainStore.dispatch(
-                    ErrorOccurAction(error: AppError.networkError)
-                )
+                break
+//                mainStore.dispatch(
+//                    ErrorOccurAction(error: AppError.networkError)
+//                )
             }
         }
     }
@@ -109,6 +110,12 @@ private extension RestaurantsViewController {
 // MARK: - MKMapViewDelegate
 extension RestaurantsViewController: MKMapViewDelegate {
     func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
+        // TODO: (dunyakirkali) Implement
+        
+        fetchVenues()
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         // TODO: (dunyakirkali) Implement
     }
 }
