@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum AppError: Error {
+enum AppError: Error, CaseIterable {
     case locationRetrievalFailed
 }
 
