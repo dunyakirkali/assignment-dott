@@ -62,8 +62,9 @@ private extension RestaurantsViewController {
         mapView.removeAnnotations(mapView.annotations)
         
         for venue in venues {
-            let annotaion = MKPointAnnotation()
+            let annotaion = IdentifiableAnnotation()
             annotaion.title = venue.name
+            annotaion.identifier = venue.id
             annotaion.coordinate = CLLocationCoordinate2D(latitude: venue.location.lat, longitude: venue.location.lng)
             mapView.addAnnotation(annotaion)
         }
@@ -116,7 +117,15 @@ extension RestaurantsViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        let venue = mainStore.state.venues.first!
+        guard
+            let annotation = view.annotation as? IdentifiableAnnotation,
+            let venue = mainStore.state.venues.first(where: {
+                $0.id == annotation.identifier
+            })
+        else {
+            return
+        }
+
         mainStore.dispatch(
             SetVenue(venue: venue)
         )
