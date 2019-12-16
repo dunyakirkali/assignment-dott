@@ -8,6 +8,6 @@
 
 public struct FSVenue: Decodable {
     let id: String
-    let name: String
+    public let name: String
     public let location: Location
 }

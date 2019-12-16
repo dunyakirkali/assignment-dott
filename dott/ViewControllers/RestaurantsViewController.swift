@@ -63,12 +63,13 @@ private extension RestaurantsViewController {
         
         for venue in venues {
             let annotaion = MKPointAnnotation()
-            annotaion.title = "London"
+            annotaion.title = venue.name
             annotaion.coordinate = CLLocationCoordinate2D(latitude: venue.location.lat, longitude: venue.location.lng)
             mapView.addAnnotation(annotaion)
         }
     }
     
+    // TODO: (dunyakirkali) Convert to action
     func fetchVenues() {
         let center = mapView.region.center
         
