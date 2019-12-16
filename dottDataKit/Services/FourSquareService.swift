@@ -34,6 +34,8 @@ extension FourSquareService: TargetType {
             params["client_secret"] = "JNVBUT3T1JRRHOYEAASDSWQ4YYCXMRGKEI15NE1U2COFVEHL"
             params["ll"] = ll
             params["v"] = "20191216"
+            params["limit"] = "50"
+            params["categoryId"] = "4d4b7105d754a06374d81259"
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
         }
     }
