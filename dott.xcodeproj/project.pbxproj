@@ -22,6 +22,18 @@
 		05FCDBFA23A806030010E993 /* dottDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCDBEA23A806030010E993 /* dottDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05FCDBFD23A806030010E993 /* dottDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCDBE823A806030010E993 /* dottDataKit.framework */; };
 		05FCDBFE23A806030010E993 /* dottDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCDBE823A806030010E993 /* dottDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05FCDC0923A806C00010E993 /* FourSquareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC0823A806C00010E993 /* FourSquareService.swift */; };
+		05FCDC0C23A807400010E993 /* FourSquareClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC0B23A807400010E993 /* FourSquareClient.swift */; };
+		05FCDC0E23A807700010E993 /* FourSquareClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC0D23A807700010E993 /* FourSquareClientProtocol.swift */; };
+		05FCDC1123A807EF0010E993 /* Fixtures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDC1023A807EF0010E993 /* Fixtures.xcassets */; };
+		05FCDC1423A808740010E993 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC1323A808740010E993 /* StringExtensions.swift */; };
+		05FCDC1723A808F40010E993 /* RestaurantsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDC1623A808F40010E993 /* RestaurantsViewController.storyboard */; };
+		05FCDC1923A8090A0010E993 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC1823A8090A0010E993 /* RestaurantsViewController.swift */; };
+		05FCDC1B23A809960010E993 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC1A23A809960010E993 /* AppState.swift */; };
+		05FCDC1D23A809B10010E993 /* AppActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC1C23A809B10010E993 /* AppActions.swift */; };
+		05FCDC1F23A809C70010E993 /* AppReeducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC1E23A809C70010E993 /* AppReeducer.swift */; };
+		05FCDC2123A80AB60010E993 /* RestaurantsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC2023A80AB60010E993 /* RestaurantsState.swift */; };
+		05FCDC2423A80BF60010E993 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC2323A80BF60010E993 /* AppCoordinator.swift */; };
 		07606B9BCF8947149539180C /* Pods_dottDataKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD64C4893CAA99E1A7E0B00 /* Pods_dottDataKitTests.framework */; };
 		0B3F2864319F8B7A82D3E16E /* Pods_dottTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5620A1CB0285F29552AF957B /* Pods_dottTests.framework */; };
 		1513EF11434240F87D8F22EE /* Pods_dott_dottUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1800B9880188CDFDC4FC4C /* Pods_dott_dottUITests.framework */; };
@@ -105,6 +117,18 @@
 		05FCDBF023A806030010E993 /* dottDataKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dottDataKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBF723A806030010E993 /* dottDataKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dottDataKitTests.swift; sourceTree = "<group>"; };
 		05FCDBF923A806030010E993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FCDC0823A806C00010E993 /* FourSquareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareService.swift; sourceTree = "<group>"; };
+		05FCDC0B23A807400010E993 /* FourSquareClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareClient.swift; sourceTree = "<group>"; };
+		05FCDC0D23A807700010E993 /* FourSquareClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareClientProtocol.swift; sourceTree = "<group>"; };
+		05FCDC1023A807EF0010E993 /* Fixtures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Fixtures.xcassets; sourceTree = "<group>"; };
+		05FCDC1323A808740010E993 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		05FCDC1623A808F40010E993 /* RestaurantsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantsViewController.storyboard; sourceTree = "<group>"; };
+		05FCDC1823A8090A0010E993 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		05FCDC1A23A809960010E993 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		05FCDC1C23A809B10010E993 /* AppActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppActions.swift; sourceTree = "<group>"; };
+		05FCDC1E23A809C70010E993 /* AppReeducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReeducer.swift; sourceTree = "<group>"; };
+		05FCDC2023A80AB60010E993 /* RestaurantsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsState.swift; sourceTree = "<group>"; };
+		05FCDC2323A80BF60010E993 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		1C541AB6F210D06DC14B638D /* Pods-dott-dottUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dott-dottUITests.release.xcconfig"; path = "Target Support Files/Pods-dott-dottUITests/Pods-dott-dottUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1FD64C4893CAA99E1A7E0B00 /* Pods_dottDataKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dottDataKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E444A5D86BEF7E7F5F3CC0 /* Pods-dott-dottUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dott-dottUITests.debug.xcconfig"; path = "Target Support Files/Pods-dott-dottUITests/Pods-dott-dottUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +220,8 @@
 		05FCDBAA23A802950010E993 /* dott */ = {
 			isa = PBXGroup;
 			children = (
+				05FCDC2223A80BE50010E993 /* Coordinators */,
+				05FCDC1523A808D70010E993 /* ViewControllers */,
 				05FCDBDB23A8049B0010E993 /* States */,
 				05FCDBDC23A804A10010E993 /* Actions */,
 				05FCDBDD23A804AC0010E993 /* Reduces */,
@@ -231,6 +257,8 @@
 		05FCDBDB23A8049B0010E993 /* States */ = {
 			isa = PBXGroup;
 			children = (
+				05FCDC1A23A809960010E993 /* AppState.swift */,
+				05FCDC2023A80AB60010E993 /* RestaurantsState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -238,6 +266,7 @@
 		05FCDBDC23A804A10010E993 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				05FCDC1C23A809B10010E993 /* AppActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -245,6 +274,7 @@
 		05FCDBDD23A804AC0010E993 /* Reduces */ = {
 			isa = PBXGroup;
 			children = (
+				05FCDC1E23A809C70010E993 /* AppReeducer.swift */,
 			);
 			path = Reduces;
 			sourceTree = "<group>";
@@ -252,6 +282,10 @@
 		05FCDBE923A806030010E993 /* dottDataKit */ = {
 			isa = PBXGroup;
 			children = (
+				05FCDC1223A808690010E993 /* Extensions */,
+				05FCDC0F23A807DC0010E993 /* Fixtures */,
+				05FCDC0A23A807320010E993 /* Client */,
+				05FCDC0723A806A20010E993 /* Services */,
 				05FCDC0623A8060A0010E993 /* Models */,
 				05FCDBEA23A806030010E993 /* dottDataKit.h */,
 				05FCDBEB23A806030010E993 /* Info.plist */,
@@ -275,6 +309,56 @@
 				05FCDBE123A805690010E993 /* Location.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		05FCDC0723A806A20010E993 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				05FCDC0823A806C00010E993 /* FourSquareService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		05FCDC0A23A807320010E993 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				05FCDC0B23A807400010E993 /* FourSquareClient.swift */,
+				05FCDC0D23A807700010E993 /* FourSquareClientProtocol.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		05FCDC0F23A807DC0010E993 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				05FCDC1023A807EF0010E993 /* Fixtures.xcassets */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		05FCDC1223A808690010E993 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				05FCDC1323A808740010E993 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05FCDC1523A808D70010E993 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				05FCDC1623A808F40010E993 /* RestaurantsViewController.storyboard */,
+				05FCDC1823A8090A0010E993 /* RestaurantsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		05FCDC2223A80BE50010E993 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				05FCDC2323A80BF60010E993 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		62E2B4478F73002071F38CAD /* Frameworks */ = {
@@ -442,6 +526,7 @@
 					};
 					05FCDBE723A806030010E993 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					05FCDBEF23A806030010E993 = {
 						CreatedOnToolsVersion = 11.3;
@@ -478,6 +563,7 @@
 			files = (
 				05FCDBB823A802960010E993 /* LaunchScreen.storyboard in Resources */,
 				05FCDBB523A802960010E993 /* Assets.xcassets in Resources */,
+				05FCDC1723A808F40010E993 /* RestaurantsViewController.storyboard in Resources */,
 				05FCDBB323A802950010E993 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +586,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCDC1123A807EF0010E993 /* Fixtures.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,10 +751,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCDC2423A80BF60010E993 /* AppCoordinator.swift in Sources */,
 				05FCDBB023A802950010E993 /* ViewController.swift in Sources */,
+				05FCDC1923A8090A0010E993 /* RestaurantsViewController.swift in Sources */,
+				05FCDC2123A80AB60010E993 /* RestaurantsState.swift in Sources */,
+				05FCDC1B23A809960010E993 /* AppState.swift in Sources */,
 				05FCDBE023A8053B0010E993 /* Venue.swift in Sources */,
 				05FCDBE223A805690010E993 /* Location.swift in Sources */,
+				05FCDC1D23A809B10010E993 /* AppActions.swift in Sources */,
 				05FCDBAC23A802950010E993 /* AppDelegate.swift in Sources */,
+				05FCDC1F23A809C70010E993 /* AppReeducer.swift in Sources */,
 				05FCDBAE23A802950010E993 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,6 +785,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCDC1423A808740010E993 /* StringExtensions.swift in Sources */,
+				05FCDC0E23A807700010E993 /* FourSquareClientProtocol.swift in Sources */,
+				05FCDC0923A806C00010E993 /* FourSquareService.swift in Sources */,
+				05FCDC0C23A807400010E993 /* FourSquareClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,6 +968,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B626593389AAD87D751FB827 /* Pods-dott.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RMWQMGE5WJ;
@@ -890,6 +988,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C683EB2C914383899140EBFD /* Pods-dott.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RMWQMGE5WJ;
@@ -997,6 +1096,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 754E0F04DE5D7A2644742A9D /* Pods-dottDataKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1014,6 +1114,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.dottDataKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1025,6 +1126,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E66C476A689C58C0EC4ED8F5 /* Pods-dottDataKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

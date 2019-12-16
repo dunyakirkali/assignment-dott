@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="37k-mo-p2x">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--dott-->
+        <scene sceneID="RxM-Xt-1Hg">
+            <objects>
+                <viewController id="37k-mo-p2x" customClass="RestaurantsViewController" customModule="dott" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dPV-kR-iSK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="O45-NI-Dxr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="O45-NI-Dxr" firstAttribute="leading" secondItem="vbM-4S-k2K" secondAttribute="leading" id="VFn-Jd-cGs"/>
+                            <constraint firstItem="vbM-4S-k2K" firstAttribute="top" secondItem="O45-NI-Dxr" secondAttribute="top" constant="44" id="fe4-L3-oM3"/>
+                            <constraint firstItem="vbM-4S-k2K" firstAttribute="trailing" secondItem="O45-NI-Dxr" secondAttribute="trailing" id="m14-6W-vfo"/>
+                            <constraint firstItem="O45-NI-Dxr" firstAttribute="bottom" secondItem="vbM-4S-k2K" secondAttribute="bottom" constant="34" id="vXb-tr-Ewq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vbM-4S-k2K"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="dott" id="Bsb-qu-ApS"/>
+                    <connections>
+                        <outlet property="mapView" destination="O45-NI-Dxr" id="otZ-Al-8LY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5r-qX-YGT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+</document>
