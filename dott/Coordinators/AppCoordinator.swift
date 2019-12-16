@@ -36,6 +36,13 @@ class AppCoordinator: StoreSubscriber {
             preferredStyle: .alert
         )
         
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
+            mainStore.dispatch(
+                ErrorSeenAction()
+            )
+        })
+        alertController.addAction(cancelAction)
+        
         rootViewController.present(alertController, animated: true, completion: nil)
     }
     

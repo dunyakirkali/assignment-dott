@@ -15,3 +15,4 @@ struct LocationChangeAction: Action {
 struct ErrorOccurAction: Action {
     let error: Error
 }
+struct ErrorSeenAction: Action {}
