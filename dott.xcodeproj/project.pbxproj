@@ -33,6 +33,9 @@
 		05FCDC2723A80F030010E993 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBDF23A8053B0010E993 /* Venue.swift */; };
 		05FCDC2823A80F050010E993 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBE123A805690010E993 /* Location.swift */; };
 		05FCDC2C23A815670010E993 /* FourSquareMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC2B23A815670010E993 /* FourSquareMeta.swift */; };
+		05FCDC3223A820260010E993 /* AppReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC3123A820260010E993 /* AppReducerTests.swift */; };
+		05FCDC3423A821550010E993 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCDC3323A821550010E993 /* MapKit.framework */; };
+		05FCDC3623A822AE0010E993 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC3523A822AE0010E993 /* AppError.swift */; };
 		07606B9BCF8947149539180C /* Pods_dottDataKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD64C4893CAA99E1A7E0B00 /* Pods_dottDataKitTests.framework */; };
 		0B3F2864319F8B7A82D3E16E /* Pods_dottTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5620A1CB0285F29552AF957B /* Pods_dottTests.framework */; };
 		1513EF11434240F87D8F22EE /* Pods_dott_dottUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1800B9880188CDFDC4FC4C /* Pods_dott_dottUITests.framework */; };
@@ -127,6 +130,9 @@
 		05FCDC2323A80BF60010E993 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		05FCDC2523A80D9A0010E993 /* FourSquareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareResponse.swift; sourceTree = "<group>"; };
 		05FCDC2B23A815670010E993 /* FourSquareMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareMeta.swift; sourceTree = "<group>"; };
+		05FCDC3123A820260010E993 /* AppReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducerTests.swift; sourceTree = "<group>"; };
+		05FCDC3323A821550010E993 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		05FCDC3523A822AE0010E993 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		1C541AB6F210D06DC14B638D /* Pods-dott-dottUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dott-dottUITests.release.xcconfig"; path = "Target Support Files/Pods-dott-dottUITests/Pods-dott-dottUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1FD64C4893CAA99E1A7E0B00 /* Pods_dottDataKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dottDataKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E444A5D86BEF7E7F5F3CC0 /* Pods-dott-dottUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dott-dottUITests.debug.xcconfig"; path = "Target Support Files/Pods-dott-dottUITests/Pods-dott-dottUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FCDBFD23A806030010E993 /* dottDataKit.framework in Frameworks */,
+				05FCDC3423A821550010E993 /* MapKit.framework in Frameworks */,
 				A273EDC394BD90D245118B89 /* Pods_dott.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +235,7 @@
 				05FCDBB423A802960010E993 /* Assets.xcassets */,
 				05FCDBB623A802960010E993 /* LaunchScreen.storyboard */,
 				05FCDBB923A802960010E993 /* Info.plist */,
+				05FCDC3523A822AE0010E993 /* AppError.swift */,
 			);
 			path = dott;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 		05FCDBC123A802960010E993 /* dottTests */ = {
 			isa = PBXGroup;
 			children = (
+				05FCDC3023A820150010E993 /* Reducers */,
 				05FCDBC223A802960010E993 /* dottTests.swift */,
 				05FCDBC423A802960010E993 /* Info.plist */,
 			);
@@ -358,9 +367,18 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		05FCDC3023A820150010E993 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				05FCDC3123A820260010E993 /* AppReducerTests.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
 		62E2B4478F73002071F38CAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05FCDC3323A821550010E993 /* MapKit.framework */,
 				5658C0DA48EF9CC5EF668164 /* Pods_dott.framework */,
 				DB1800B9880188CDFDC4FC4C /* Pods_dott_dottUITests.framework */,
 				5620A1CB0285F29552AF957B /* Pods_dottTests.framework */,
@@ -751,6 +769,7 @@
 				05FCDC1923A8090A0010E993 /* RestaurantsViewController.swift in Sources */,
 				05FCDC1B23A809960010E993 /* AppState.swift in Sources */,
 				05FCDC1D23A809B10010E993 /* AppActions.swift in Sources */,
+				05FCDC3623A822AE0010E993 /* AppError.swift in Sources */,
 				05FCDBAC23A802950010E993 /* AppDelegate.swift in Sources */,
 				05FCDC1F23A809C70010E993 /* AppReeducer.swift in Sources */,
 				05FCDBAE23A802950010E993 /* SceneDelegate.swift in Sources */,
@@ -761,6 +780,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCDC3223A820260010E993 /* AppReducerTests.swift in Sources */,
 				05FCDBC323A802960010E993 /* dottTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,6 @@ struct LocationChangeAction: Action {
     let location: CLLocation
 }
 struct ErrorOccurAction: Action {
-    let error: Error
+    let error: AppError
 }
 struct ErrorSeenAction: Action {}

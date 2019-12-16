@@ -68,7 +68,7 @@ extension AppDelegate: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         mainStore.dispatch(
-            ErrorOccurAction(error: error)
+            ErrorOccurAction(error: AppError.locationRetrievalFailed)
         )
     }
 }

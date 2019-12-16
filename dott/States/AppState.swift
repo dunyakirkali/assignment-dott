@@ -13,5 +13,5 @@ import dottDataKit
 struct AppState: StateType {
     var currentLocation: CLLocation?
     var restaurants: [Venue] = []
-    var error: Error?
+    var error: AppError?
 }
