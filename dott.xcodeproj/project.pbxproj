@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		05FCDBB823A802960010E993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDBB623A802960010E993 /* LaunchScreen.storyboard */; };
 		05FCDBC323A802960010E993 /* dottTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBC223A802960010E993 /* dottTests.swift */; };
 		05FCDBCE23A802960010E993 /* dottUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBCD23A802960010E993 /* dottUITests.swift */; };
+		05FCDBE023A8053B0010E993 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBDF23A8053B0010E993 /* Venue.swift */; };
+		05FCDBE223A805690010E993 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBE123A805690010E993 /* Location.swift */; };
+		05FCDBF123A806030010E993 /* dottDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCDBE823A806030010E993 /* dottDataKit.framework */; };
+		05FCDBF823A806030010E993 /* dottDataKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBF723A806030010E993 /* dottDataKitTests.swift */; };
+		05FCDBFA23A806030010E993 /* dottDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCDBEA23A806030010E993 /* dottDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05FCDBFD23A806030010E993 /* dottDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCDBE823A806030010E993 /* dottDataKit.framework */; };
+		05FCDBFE23A806030010E993 /* dottDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCDBE823A806030010E993 /* dottDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0B3F2864319F8B7A82D3E16E /* Pods_dottTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5620A1CB0285F29552AF957B /* Pods_dottTests.framework */; };
 		1513EF11434240F87D8F22EE /* Pods_dott_dottUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1800B9880188CDFDC4FC4C /* Pods_dott_dottUITests.framework */; };
 		A273EDC394BD90D245118B89 /* Pods_dott.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5658C0DA48EF9CC5EF668164 /* Pods_dott.framework */; };
@@ -35,7 +42,42 @@
 			remoteGlobalIDString = 05FCDBA723A802950010E993;
 			remoteInfo = dott;
 		};
+		05FCDBF223A806030010E993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05FCDBA023A802950010E993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05FCDBE723A806030010E993;
+			remoteInfo = dottDataKit;
+		};
+		05FCDBF423A806030010E993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05FCDBA023A802950010E993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05FCDBA723A802950010E993;
+			remoteInfo = dott;
+		};
+		05FCDBFB23A806030010E993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05FCDBA023A802950010E993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05FCDBE723A806030010E993;
+			remoteInfo = dottDataKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05FCDC0223A806030010E993 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05FCDBFE23A806030010E993 /* dottDataKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		05FCDBA823A802950010E993 /* dott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dott.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +94,14 @@
 		05FCDBC923A802960010E993 /* dottUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dottUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBCD23A802960010E993 /* dottUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dottUITests.swift; sourceTree = "<group>"; };
 		05FCDBCF23A802960010E993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FCDBDF23A8053B0010E993 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		05FCDBE123A805690010E993 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		05FCDBE823A806030010E993 /* dottDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dottDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FCDBEA23A806030010E993 /* dottDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dottDataKit.h; sourceTree = "<group>"; };
+		05FCDBEB23A806030010E993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FCDBF023A806030010E993 /* dottDataKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dottDataKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FCDBF723A806030010E993 /* dottDataKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dottDataKitTests.swift; sourceTree = "<group>"; };
+		05FCDBF923A806030010E993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C541AB6F210D06DC14B638D /* Pods-dott-dottUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dott-dottUITests.release.xcconfig"; path = "Target Support Files/Pods-dott-dottUITests/Pods-dott-dottUITests.release.xcconfig"; sourceTree = "<group>"; };
 		40E444A5D86BEF7E7F5F3CC0 /* Pods-dott-dottUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dott-dottUITests.debug.xcconfig"; path = "Target Support Files/Pods-dott-dottUITests/Pods-dott-dottUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5620A1CB0285F29552AF957B /* Pods_dottTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dottTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCDBFD23A806030010E993 /* dottDataKit.framework in Frameworks */,
 				A273EDC394BD90D245118B89 /* Pods_dott.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +139,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05FCDBE523A806030010E993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FCDBED23A806030010E993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FCDBF123A806030010E993 /* dottDataKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,6 +163,8 @@
 				05FCDBAA23A802950010E993 /* dott */,
 				05FCDBC123A802960010E993 /* dottTests */,
 				05FCDBCC23A802960010E993 /* dottUITests */,
+				05FCDBE923A806030010E993 /* dottDataKit */,
+				05FCDBF623A806030010E993 /* dottDataKitTests */,
 				05FCDBA923A802950010E993 /* Products */,
 				78AEC208AD595271A63A59A2 /* Pods */,
 				62E2B4478F73002071F38CAD /* Frameworks */,
@@ -109,6 +177,8 @@
 				05FCDBA823A802950010E993 /* dott.app */,
 				05FCDBBE23A802960010E993 /* dottTests.xctest */,
 				05FCDBC923A802960010E993 /* dottUITests.xctest */,
+				05FCDBE823A806030010E993 /* dottDataKit.framework */,
+				05FCDBF023A806030010E993 /* dottDataKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +186,9 @@
 		05FCDBAA23A802950010E993 /* dott */ = {
 			isa = PBXGroup;
 			children = (
+				05FCDBDB23A8049B0010E993 /* States */,
+				05FCDBDC23A804A10010E993 /* Actions */,
+				05FCDBDD23A804AC0010E993 /* Reduces */,
 				05FCDBAB23A802950010E993 /* AppDelegate.swift */,
 				05FCDBAD23A802950010E993 /* SceneDelegate.swift */,
 				05FCDBAF23A802950010E993 /* ViewController.swift */,
@@ -145,6 +218,55 @@
 			path = dottUITests;
 			sourceTree = "<group>";
 		};
+		05FCDBDB23A8049B0010E993 /* States */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		05FCDBDC23A804A10010E993 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		05FCDBDD23A804AC0010E993 /* Reduces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reduces;
+			sourceTree = "<group>";
+		};
+		05FCDBE923A806030010E993 /* dottDataKit */ = {
+			isa = PBXGroup;
+			children = (
+				05FCDC0623A8060A0010E993 /* Models */,
+				05FCDBEA23A806030010E993 /* dottDataKit.h */,
+				05FCDBEB23A806030010E993 /* Info.plist */,
+			);
+			path = dottDataKit;
+			sourceTree = "<group>";
+		};
+		05FCDBF623A806030010E993 /* dottDataKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				05FCDBF723A806030010E993 /* dottDataKitTests.swift */,
+				05FCDBF923A806030010E993 /* Info.plist */,
+			);
+			path = dottDataKitTests;
+			sourceTree = "<group>";
+		};
+		05FCDC0623A8060A0010E993 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05FCDBDF23A8053B0010E993 /* Venue.swift */,
+				05FCDBE123A805690010E993 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		62E2B4478F73002071F38CAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,11 +287,21 @@
 				CC1C8615323AB52B673635AB /* Pods-dottTests.debug.xcconfig */,
 				B467462972862AD67D6984FF /* Pods-dottTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05FCDBE323A806030010E993 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FCDBFA23A806030010E993 /* dottDataKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		05FCDBA723A802950010E993 /* dott */ = {
@@ -181,10 +313,12 @@
 				05FCDBA523A802950010E993 /* Frameworks */,
 				05FCDBA623A802950010E993 /* Resources */,
 				693BB4E3F227DFFE822790E6 /* [CP] Embed Pods Frameworks */,
+				05FCDC0223A806030010E993 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				05FCDBFC23A806030010E993 /* PBXTargetDependency */,
 			);
 			name = dott;
 			productName = dott;
@@ -230,6 +364,43 @@
 			productReference = 05FCDBC923A802960010E993 /* dottUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		05FCDBE723A806030010E993 /* dottDataKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05FCDBFF23A806030010E993 /* Build configuration list for PBXNativeTarget "dottDataKit" */;
+			buildPhases = (
+				05FCDBE323A806030010E993 /* Headers */,
+				05FCDBE423A806030010E993 /* Sources */,
+				05FCDBE523A806030010E993 /* Frameworks */,
+				05FCDBE623A806030010E993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dottDataKit;
+			productName = dottDataKit;
+			productReference = 05FCDBE823A806030010E993 /* dottDataKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		05FCDBEF23A806030010E993 /* dottDataKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05FCDC0323A806030010E993 /* Build configuration list for PBXNativeTarget "dottDataKitTests" */;
+			buildPhases = (
+				05FCDBEC23A806030010E993 /* Sources */,
+				05FCDBED23A806030010E993 /* Frameworks */,
+				05FCDBEE23A806030010E993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05FCDBF323A806030010E993 /* PBXTargetDependency */,
+				05FCDBF523A806030010E993 /* PBXTargetDependency */,
+			);
+			name = dottDataKitTests;
+			productName = dottDataKitTests;
+			productReference = 05FCDBF023A806030010E993 /* dottDataKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,6 +422,13 @@
 						CreatedOnToolsVersion = 11.3;
 						TestTargetID = 05FCDBA723A802950010E993;
 					};
+					05FCDBE723A806030010E993 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					05FCDBEF23A806030010E993 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 05FCDBA723A802950010E993;
+					};
 				};
 			};
 			buildConfigurationList = 05FCDBA323A802950010E993 /* Build configuration list for PBXProject "dott" */;
@@ -269,6 +447,8 @@
 				05FCDBA723A802950010E993 /* dott */,
 				05FCDBBD23A802960010E993 /* dottTests */,
 				05FCDBC823A802960010E993 /* dottUITests */,
+				05FCDBE723A806030010E993 /* dottDataKit */,
+				05FCDBEF23A806030010E993 /* dottDataKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +472,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		05FCDBC723A802960010E993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FCDBE623A806030010E993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FCDBEE23A806030010E993 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,6 +603,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FCDBB023A802950010E993 /* ViewController.swift in Sources */,
+				05FCDBE023A8053B0010E993 /* Venue.swift in Sources */,
+				05FCDBE223A805690010E993 /* Location.swift in Sources */,
 				05FCDBAC23A802950010E993 /* AppDelegate.swift in Sources */,
 				05FCDBAE23A802950010E993 /* SceneDelegate.swift in Sources */,
 			);
@@ -430,6 +626,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05FCDBE423A806030010E993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FCDBEC23A806030010E993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FCDBF823A806030010E993 /* dottDataKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -442,6 +653,21 @@
 			isa = PBXTargetDependency;
 			target = 05FCDBA723A802950010E993 /* dott */;
 			targetProxy = 05FCDBCA23A802960010E993 /* PBXContainerItemProxy */;
+		};
+		05FCDBF323A806030010E993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05FCDBE723A806030010E993 /* dottDataKit */;
+			targetProxy = 05FCDBF223A806030010E993 /* PBXContainerItemProxy */;
+		};
+		05FCDBF523A806030010E993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05FCDBA723A802950010E993 /* dott */;
+			targetProxy = 05FCDBF423A806030010E993 /* PBXContainerItemProxy */;
+		};
+		05FCDBFC23A806030010E993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05FCDBE723A806030010E993 /* dottDataKit */;
+			targetProxy = 05FCDBFB23A806030010E993 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -705,6 +931,100 @@
 			};
 			name = Release;
 		};
+		05FCDC0023A806030010E993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RMWQMGE5WJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = dottDataKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.dottDataKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05FCDC0123A806030010E993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RMWQMGE5WJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = dottDataKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.dottDataKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05FCDC0423A806030010E993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RMWQMGE5WJ;
+				INFOPLIST_FILE = dottDataKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.dottDataKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dott.app/dott";
+			};
+			name = Debug;
+		};
+		05FCDC0523A806030010E993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RMWQMGE5WJ;
+				INFOPLIST_FILE = dottDataKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.dottDataKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dott.app/dott";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -740,6 +1060,24 @@
 			buildConfigurations = (
 				05FCDBD923A802960010E993 /* Debug */,
 				05FCDBDA23A802960010E993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05FCDBFF23A806030010E993 /* Build configuration list for PBXNativeTarget "dottDataKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FCDC0023A806030010E993 /* Debug */,
+				05FCDC0123A806030010E993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05FCDC0323A806030010E993 /* Build configuration list for PBXNativeTarget "dottDataKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FCDC0423A806030010E993 /* Debug */,
+				05FCDC0523A806030010E993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
