@@ -19,3 +19,16 @@ target 'dott' do
   end
 
 end
+
+target 'dottDataKit' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for dott
+  pod 'Moya'
+
+  target 'dottDataKitTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end
