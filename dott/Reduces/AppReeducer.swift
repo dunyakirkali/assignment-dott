@@ -18,6 +18,8 @@ func appReducer(action: Action, state: AppState?) -> AppState {
         state.error = action.error
     case _ as ErrorSeenAction:
         state.error = nil
+    case let action as SetVenues:
+        state.venues = action.venues
     default:
         break
     }

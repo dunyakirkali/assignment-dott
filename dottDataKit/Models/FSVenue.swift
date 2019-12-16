@@ -6,8 +6,8 @@
 //  Copyright © 2019 Dunya Kirkali. All rights reserved.
 //
 
-public struct Venue: Decodable {
+public struct FSVenue: Decodable {
     let id: String
     let name: String
-//    public let location: Location
+    public let location: Location
 }

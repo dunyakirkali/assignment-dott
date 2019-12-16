@@ -8,6 +8,7 @@
 
 import CoreLocation
 import ReSwift
+import dottDataKit
 
 /// Triggered when the user's location has changed
 struct LocationChangeAction: Action {
@@ -21,3 +22,8 @@ struct ErrorOccurAction: Action {
 
 /// Triggered when the user dismisses an alert
 struct ErrorSeenAction: Action {}
+
+/// Triggered when venues have been fetched
+struct SetVenues: Action {
+    let venues: [FSVenue]
+}

@@ -29,10 +29,20 @@ class RestaurantsViewController: UIViewController, StoryboardBased {
 // MARK: - View Lifecycle
 extension RestaurantsViewController {
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
         mainStore.subscribe(self)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        fetchVenues()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
         mainStore.unsubscribe(self)
     }
 }
@@ -43,27 +53,23 @@ extension RestaurantsViewController: StoreSubscriber {
         if let location = state.currentLocation {
             mapView.setCenter(location.coordinate, animated: true)
         }
-        reloadData(venues: state.restaurants)
+        reloadData(venues: state.venues)
     }
 }
 
 private extension RestaurantsViewController {
-    func reloadData(venues: [Venue]) {
+    func reloadData(venues: [FSVenue]) {
         mapView.removeAnnotations(mapView.annotations)
         
         for venue in venues {
-//            let annotaion = MKPointAnnotation()
-//            annotaion.title = "London"
-//            annotaion.coordinate = CLLocationCoordinate2D(latitude: venue.location.lat, longitude: venue.location.lng)
-//            mapView.addAnnotation(annotaion)
+            let annotaion = MKPointAnnotation()
+            annotaion.title = "London"
+            annotaion.coordinate = CLLocationCoordinate2D(latitude: venue.location.lat, longitude: venue.location.lng)
+            mapView.addAnnotation(annotaion)
         }
     }
-}
-
-// MARK: - MKMapViewDelegate
-extension RestaurantsViewController: MKMapViewDelegate {
-    func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-        
+    
+    func fetchVenues() {
         let center = mapView.region.center
         
         let lat : NSNumber = NSNumber(value: center.latitude)
@@ -79,15 +85,29 @@ extension RestaurantsViewController: MKMapViewDelegate {
             case let .success(moyaResponse):
                 do {
                     let data = moyaResponse.data
-                    let result = try JSONDecoder().decode(FourSquareResponse<Venue>.self, from: data)
-                    print(result)
+                    let result = try JSONDecoder().decode(FSResponse.self, from: data)
+                    
+                    mainStore.dispatch(
+                        SetVenues(venues: result.response.venues)
+                    )
                 }
-                catch let error {
-                    print(error)
+                catch {
+                    mainStore.dispatch(
+                        ErrorOccurAction(error: AppError.jsonError)
+                    )
                 }
-            case let .failure(error):
-                print(error)
+            case .failure:
+                mainStore.dispatch(
+                    ErrorOccurAction(error: AppError.networkError)
+                )
             }
         }
+    }
+}
+
+// MARK: - MKMapViewDelegate
+extension RestaurantsViewController: MKMapViewDelegate {
+    func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
+        // TODO: (dunyakirkali) Implement
     }
 }

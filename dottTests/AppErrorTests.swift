@@ -11,7 +11,7 @@ import XCTest
 
 class AppErrorTests: XCTestCase {
     func testErrorCount() {
-        XCTAssertEqual(AppError.allCases.count, 1)
+        XCTAssertEqual(AppError.allCases.count, 3)
     }
     
     func testErrorDescriptionWhenLocationRetrievalFailed() {

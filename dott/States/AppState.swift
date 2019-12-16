@@ -14,7 +14,7 @@ struct AppState: StateType {
     /// Keeps the user's current location
     var currentLocation: CLLocation?
     /// Keeps a list of visible Venues
-    var restaurants: [Venue] = []
+    var venues: [FSVenue] = []
     /// Keeps the current app error
     var error: AppError?
 }

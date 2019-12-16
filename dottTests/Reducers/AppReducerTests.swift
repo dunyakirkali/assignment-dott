@@ -40,7 +40,7 @@ class AppReducerTests: XCTestCase {
     func testErrorSeenAction() {
         // GIVEN
         let error = AppError.locationRetrievalFailed
-        let appState = AppState(currentLocation: nil, restaurants: [], error: error)
+        let appState = AppState(currentLocation: nil, venues: [], error: error)
         
         // WHEN
         let resState = appReducer(action: ErrorSeenAction(), state: appState)
