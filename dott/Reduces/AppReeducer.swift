@@ -14,6 +14,8 @@ func appReducer(action: Action, state: AppState?) -> AppState {
     switch action {
     case let action as LocationChangeAction:
         state.currentLocation = action.location
+    case let action as ErrorOccurAction:
+        state.error = action.error
     default:
         break
     }

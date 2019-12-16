@@ -12,3 +12,6 @@ import ReSwift
 struct LocationChangeAction: Action {
     let location: CLLocation
 }
+struct ErrorOccurAction: Action {
+    let error: Error
+}
