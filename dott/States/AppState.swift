@@ -6,8 +6,11 @@
 //  Copyright © 2019 Dunya Kirkali. All rights reserved.
 //
 
+import CoreLocation
 import ReSwift
+import dottDataKit
 
 struct AppState: StateType {
-    var counter: Int = 0
+    var currentLocation: CLLocation?
+    var restaurants: [Venue] = []
 }

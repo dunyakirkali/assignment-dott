@@ -8,19 +8,22 @@
 
 import UIKit
 import ReSwift
+import CoreLocation
 
 let mainStore = Store<AppState>(
-    reducer: counterReducer,
+    reducer: appReducer,
     state: nil
 )
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let locationManager: CLLocationManager = CLLocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        setupLocationManager()
+
         return true
     }
 
@@ -37,7 +40,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 
+// MARK: - Private methods
+
+private extension AppDelegate {
+    func setupLocationManager() {
+        locationManager.delegate = self
+//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestLocation()
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+}
+
+// MARK: - CLLocationManagerDelegate
+
+extension AppDelegate: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    
+        guard let firstLocation = locations.first else { return }
+        
+        mainStore.dispatch(
+            LocationChangeAction(location: firstLocation)
+        )
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+}

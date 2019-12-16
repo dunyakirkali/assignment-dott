@@ -8,14 +8,12 @@
 
 import ReSwift
 
-func counterReducer(action: Action, state: AppState?) -> AppState {
+func appReducer(action: Action, state: AppState?) -> AppState {
     var state = state ?? AppState()
 
     switch action {
-    case _ as CounterActionIncrease:
-        state.counter += 1
-    case _ as CounterActionDecrease:
-        state.counter -= 1
+    case let action as LocationChangeAction:
+        state.currentLocation = action.location
     default:
         break
     }

@@ -6,7 +6,9 @@
 //  Copyright © 2019 Dunya Kirkali. All rights reserved.
 //
 
+import CoreLocation
 import ReSwift
 
-struct CounterActionIncrease: Action {}
-struct CounterActionDecrease: Action {}
+struct LocationChangeAction: Action {
+    let location: CLLocation
+}

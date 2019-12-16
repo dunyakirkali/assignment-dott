@@ -40,7 +40,23 @@ extension RestaurantsViewController {
 // MARK: - StoreSubscriber
 extension RestaurantsViewController: StoreSubscriber {
     func newState(state: AppState) {
-        print("\(state.counter)")
+        if let location = state.currentLocation {
+            mapView.setCenter(location.coordinate, animated: true)
+        }
+        reloadData(venues: state.restaurants)
+    }
+}
+
+private extension RestaurantsViewController {
+    func reloadData(venues: [Venue]) {
+        mapView.removeAnnotations(mapView.annotations)
+        
+        for venue in venues {
+//            let annotaion = MKPointAnnotation()
+//            annotaion.title = "London"
+//            annotaion.coordinate = CLLocationCoordinate2D(latitude: venue.location.lat, longitude: venue.location.lng)
+//            mapView.addAnnotation(annotaion)
+        }
     }
 }
 
@@ -57,27 +73,20 @@ extension RestaurantsViewController: MKMapViewDelegate {
             r.cancel()
         }
         
-        mainStore.dispatch(
-            CounterActionIncrease()
-        )
-        
         let provider = MoyaProvider<FourSquareService>(plugins: [NetworkLoggerPlugin(verbose: true)])
         req = provider.request(.searchVenues(ll: "\(lat),\(lng)")) { result in
             switch result {
             case let .success(moyaResponse):
-                let data = moyaResponse.data // Data, your JSON response is probably in here!
-                let statusCode = moyaResponse.statusCode // Int - 200, 401, 500, etc
-
-                switch statusCode {
-                case 200:
-                    print(data)
-                default:
-                    print("ERROR")
+                do {
+                    let data = moyaResponse.data
+                    let result = try JSONDecoder().decode(FourSquareResponse<Venue>.self, from: data)
+                    print(result)
                 }
-                // do something in your app
+                catch let error {
+                    print(error)
+                }
             case let .failure(error):
-                break
-                // TODO: handle the error == best. comment. ever.
+                print(error)
             }
         }
     }
