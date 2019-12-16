@@ -1,0 +1,24 @@
+PODS:
+  - ReSwift (5.0.0)
+  - Reusable (4.1.0):
+    - Reusable/Storyboard (= 4.1.0)
+    - Reusable/View (= 4.1.0)
+  - Reusable/Storyboard (4.1.0)
+  - Reusable/View (4.1.0)
+
+DEPENDENCIES:
+  - ReSwift
+  - Reusable
+
+SPEC REPOS:
+  trunk:
+    - ReSwift
+    - Reusable
+
+SPEC CHECKSUMS:
+  ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
+  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+
+PODFILE CHECKSUM: d031fcde1be14ced547d314b5aa8c534d671fb7e
+
+COCOAPODS: 1.8.4

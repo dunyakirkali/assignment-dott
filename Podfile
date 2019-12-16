@@ -6,6 +6,8 @@ target 'dott' do
   use_frameworks!
 
   # Pods for dott
+  pod 'ReSwift'
+  pod 'Reusable'
 
   target 'dottTests' do
     inherit! :search_paths
