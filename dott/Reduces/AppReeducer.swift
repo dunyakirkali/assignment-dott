@@ -20,9 +20,13 @@ func appReducer(action: Action, state: AppState?) -> AppState {
         state.error = nil
     case let action as SetVenues:
         state.venues = action.venues
+    case let action as SetVenue:
+        state.venue = action.venue
     default:
         break
     }
+    
+    state.navigationState = navigationReducer(action: action, state: state.navigationState)
 
     return state
 }

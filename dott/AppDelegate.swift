@@ -10,9 +10,22 @@ import UIKit
 import ReSwift
 import CoreLocation
 
+let loggingMiddleware: Middleware<Any> = { dispatch, getState in
+    return { next in
+        return { action in
+            // perform middleware logic
+            print(action)
+
+            // call next middleware
+            return next(action)
+        }
+    }
+}
+
 let mainStore = Store<AppState>(
     reducer: appReducer,
-    state: nil
+    state: nil,
+    middleware: [loggingMiddleware]
 )
 
 @UIApplicationMain

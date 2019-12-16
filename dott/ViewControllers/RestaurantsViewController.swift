@@ -116,6 +116,12 @@ extension RestaurantsViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        // TODO: (dunyakirkali) Implement
+        let venue = mainStore.state.venues.first!
+        mainStore.dispatch(
+            SetVenue(venue: venue)
+        )
+        mainStore.dispatch(
+            NavigationAction(to: .details)
+        )
     }
 }

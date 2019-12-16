@@ -17,4 +17,8 @@ struct AppState: StateType {
     var venues: [FSVenue] = []
     /// Keeps the current app error
     var error: AppError?
+    /// Navigation State
+    var navigationState: NavigationState = NavigationState(viewState: .map)
+    /// Selected venue
+    var venue: FSVenue?
 }

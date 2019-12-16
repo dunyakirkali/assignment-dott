@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.9.0)
+  - Kingfisher (5.12.0):
+    - Kingfisher/Core (= 5.12.0)
+  - Kingfisher/Core (5.12.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -14,6 +17,7 @@ PODS:
   - Reusable/View (4.1.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - Moya
   - ReSwift
   - Reusable
@@ -21,6 +25,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
     - Moya
     - Result
     - ReSwift
@@ -28,11 +33,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
   Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
 
-PODFILE CHECKSUM: 3651c2b8ba7b33cf4e24f47994b6d09e1d3e0a56
+PODFILE CHECKSUM: 78dad9dc3f6b9f4294c4719a9e2733b2a39ed48d
 
 COCOAPODS: 1.8.4

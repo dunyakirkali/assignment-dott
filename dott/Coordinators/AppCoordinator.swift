@@ -10,14 +10,16 @@ import UIKit
 import ReSwift
 
 class AppCoordinator: StoreSubscriber {
-    typealias StoreSubscriberStateType = AppState
+    typealias StoreSubscriberStateType = NavigationState
 
     var rootViewController: UINavigationController
 
     init(_ rootViewController: UINavigationController){
         self.rootViewController = rootViewController
         
-        mainStore.subscribe(self)
+        mainStore.subscribe(self) { subcription in
+            subcription.select { state in state.navigationState }
+        }
     }
     
     deinit {
@@ -27,6 +29,15 @@ class AppCoordinator: StoreSubscriber {
     func start() {
         let restaurantsVC = RestaurantsViewController.instantiate()
         rootViewController.pushViewController(restaurantsVC, animated: false)
+    }
+    
+    func showMap() {
+        rootViewController.popToRootViewController(animated: true)
+    }
+    
+    func showDetails() {
+        let vc = RestaurantDetailsViewController.instantiate()
+        rootViewController.present(vc, animated: true, completion: nil)
     }
     
     func show(error: Error) {
@@ -46,9 +57,16 @@ class AppCoordinator: StoreSubscriber {
         rootViewController.present(alertController, animated: true, completion: nil)
     }
     
-    func newState(state: AppState) {
-        if let error = state.error {
-            show(error: error)
+    func newState(state: NavigationState) {
+//        if let error = state.error {
+//            show(error: error)
+//        }
+        
+        switch state.viewState {
+        case .details:
+            showDetails()
+        case .map:
+            showMap()
         }
     }
 }

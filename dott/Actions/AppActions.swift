@@ -27,3 +27,8 @@ struct ErrorSeenAction: Action {}
 struct SetVenues: Action {
     let venues: [FSVenue]
 }
+
+/// Triggered when user taps on a venue
+struct SetVenue: Action {
+    let venue: FSVenue
+}

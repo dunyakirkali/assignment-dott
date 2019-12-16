@@ -8,6 +8,7 @@ target 'dott' do
   # Pods for dott
   pod 'ReSwift'
   pod 'Reusable'
+  pod 'Kingfisher'
 
   target 'dottTests' do
     inherit! :search_paths

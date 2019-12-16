@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5F1-nc-o0H">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurant Details View Controller-->
+        <scene sceneID="aaA-Su-wqD">
+            <objects>
+                <viewController id="5F1-nc-o0H" customClass="RestaurantDetailsViewController" customModule="dott" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gDV-4M-2Ty">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ao4-9B-VRQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSS-M8-aMh">
+                                <rect key="frame" x="20" y="429" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MSS-M8-aMh" firstAttribute="top" secondItem="Ao4-9B-VRQ" secondAttribute="bottom" constant="20" id="LUa-AT-5an"/>
+                            <constraint firstItem="Ao4-9B-VRQ" firstAttribute="leading" secondItem="gDV-4M-2Ty" secondAttribute="leading" id="RAo-Q0-kcx"/>
+                            <constraint firstItem="Ao4-9B-VRQ" firstAttribute="height" secondItem="Nh3-ab-P4C" secondAttribute="height" multiplier="0.5" id="Tfb-Pr-Ngf"/>
+                            <constraint firstItem="Ao4-9B-VRQ" firstAttribute="trailing" secondItem="Nh3-ab-P4C" secondAttribute="trailing" id="U8x-Ud-4za"/>
+                            <constraint firstItem="Nh3-ab-P4C" firstAttribute="trailing" secondItem="MSS-M8-aMh" secondAttribute="trailing" constant="20" id="hqu-1p-1Ez"/>
+                            <constraint firstItem="MSS-M8-aMh" firstAttribute="leading" secondItem="Nh3-ab-P4C" secondAttribute="leading" constant="20" id="m4u-ax-zHK"/>
+                            <constraint firstItem="Ao4-9B-VRQ" firstAttribute="top" secondItem="gDV-4M-2Ty" secondAttribute="top" id="sry-Es-Ikm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nh3-ab-P4C"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Ao4-9B-VRQ" id="F6l-AT-Xne"/>
+                        <outlet property="nameLabel" destination="MSS-M8-aMh" id="Jhx-tS-Qda"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uoy-Ge-evm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.130434782608695" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
