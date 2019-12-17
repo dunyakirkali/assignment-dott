@@ -37,7 +37,7 @@ extension RestaurantsViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-//        fetchVenues()
+        focusOnUserLocation()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -50,14 +50,17 @@ extension RestaurantsViewController {
 // MARK: - StoreSubscriber
 extension RestaurantsViewController: StoreSubscriber {
     func newState(state: AppState) {
-//        if let location = state.currentLocation {
-//            mapView.setCenter(location.coordinate, animated: true)
-//        }
         reloadData(venues: state.venues)
     }
 }
 
 private extension RestaurantsViewController {
+    func focusOnUserLocation() {
+        if let location = mainStore.state.currentLocation {
+            mapView.setCenter(location.coordinate, animated: true)
+        }
+    }
+
     func reloadData(venues: [FSVenue]) {
         mapView.removeAnnotations(mapView.annotations)
         
