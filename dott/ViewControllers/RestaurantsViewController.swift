@@ -114,8 +114,6 @@ private extension RestaurantsViewController {
 // MARK: - MKMapViewDelegate
 extension RestaurantsViewController: MKMapViewDelegate {
     func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-        // TODO: (dunyakirkali) Implement
-        
         fetchVenues()
     }
     
