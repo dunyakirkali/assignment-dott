@@ -30,5 +30,5 @@ struct SetVenues: Action {
 
 /// Triggered when user taps on a venue
 struct SetVenue: Action {
-    let venue: FSVenue
+    let venue: FSVenue?
 }

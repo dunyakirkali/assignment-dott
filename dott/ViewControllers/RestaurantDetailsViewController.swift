@@ -28,6 +28,13 @@ extension RestaurantDetailsViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        mainStore.dispatch(
+            SetVenue(venue: nil)
+        )
+        mainStore.dispatch(
+            NavigationAction(to: .map)
+        )
 
         mainStore.unsubscribe(self)
     }

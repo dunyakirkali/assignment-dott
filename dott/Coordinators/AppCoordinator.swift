@@ -17,8 +17,12 @@ class AppCoordinator: StoreSubscriber {
     init(_ rootViewController: UINavigationController){
         self.rootViewController = rootViewController
         
-        mainStore.subscribe(self) { subcription in
-            subcription.select { state in state.navigationState }
+        mainStore.subscribe(self) {
+            $0.select {
+                $0.navigationState
+            }.skip(when: { old, new in
+                old.viewState == new.viewState
+            })
         }
     }
     
@@ -29,10 +33,6 @@ class AppCoordinator: StoreSubscriber {
     func start() {
         let restaurantsVC = RestaurantsViewController.instantiate()
         rootViewController.pushViewController(restaurantsVC, animated: false)
-    }
-    
-    func showMap() {
-        rootViewController.popToRootViewController(animated: true)
     }
     
     func showDetails() {
@@ -58,6 +58,7 @@ class AppCoordinator: StoreSubscriber {
     }
     
     func newState(state: NavigationState) {
+        // TODO: (dunyakirkali) Enable again
 //        if let error = state.error {
 //            show(error: error)
 //        }
@@ -65,8 +66,8 @@ class AppCoordinator: StoreSubscriber {
         switch state.viewState {
         case .details:
             showDetails()
-        case .map:
-            showMap()
+        default:
+            break
         }
     }
 }
