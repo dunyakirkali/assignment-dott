@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0503BDDB23A83B6E004BA92B /* IdentifiableAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDDA23A83B6E004BA92B /* IdentifiableAnnotation.swift */; };
 		0503BDE123A96379004BA92B /* NavigationReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDE023A96379004BA92B /* NavigationReducerTests.swift */; };
+		0503BDE423A964D0004BA92B /* RestaurantDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDE323A964D0004BA92B /* RestaurantDetailsViewControllerTests.swift */; };
 		05FCDBAC23A802950010E993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAB23A802950010E993 /* AppDelegate.swift */; };
 		05FCDBAE23A802950010E993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAD23A802950010E993 /* SceneDelegate.swift */; };
 		05FCDBB523A802960010E993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDBB423A802960010E993 /* Assets.xcassets */; };
@@ -107,6 +108,7 @@
 		0342599B22D4BA54A8564678 /* Pods_dottDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dottDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0503BDDA23A83B6E004BA92B /* IdentifiableAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableAnnotation.swift; sourceTree = "<group>"; };
 		0503BDE023A96379004BA92B /* NavigationReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationReducerTests.swift; sourceTree = "<group>"; };
+		0503BDE323A964D0004BA92B /* RestaurantDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewControllerTests.swift; sourceTree = "<group>"; };
 		05FCDBA823A802950010E993 /* dott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBAB23A802950010E993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FCDBAD23A802950010E993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +214,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0503BDE223A964BF004BA92B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0503BDE323A964D0004BA92B /* RestaurantDetailsViewControllerTests.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		05FCDB9F23A802950010E993 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +270,7 @@
 		05FCDBC123A802960010E993 /* dottTests */ = {
 			isa = PBXGroup;
 			children = (
+				0503BDE223A964BF004BA92B /* ViewControllers */,
 				05FCDC3023A820150010E993 /* Reducers */,
 				05FCDC3723A823990010E993 /* AppErrorTests.swift */,
 				05FCDBC423A802960010E993 /* Info.plist */,
@@ -812,6 +823,7 @@
 			files = (
 				05FCDC3223A820260010E993 /* AppReducerTests.swift in Sources */,
 				05FCDC3823A823990010E993 /* AppErrorTests.swift in Sources */,
+				0503BDE423A964D0004BA92B /* RestaurantDetailsViewControllerTests.swift in Sources */,
 				0503BDE123A96379004BA92B /* NavigationReducerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
