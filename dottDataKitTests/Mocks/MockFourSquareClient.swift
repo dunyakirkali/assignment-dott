@@ -6,4 +6,11 @@
 //  Copyright © 2019 Dunya Kirkali. All rights reserved.
 //
 
-import Foundation
+import Moya
+@testable import dottDataKit
+
+class MockFourSquareClient: FourSquareClientProtocol {
+    static var provider: MoyaProvider<FourSquareService> {
+        return MoyaProvider<FourSquareService>(stubClosure: MoyaProvider.immediatelyStub)
+    }
+}
