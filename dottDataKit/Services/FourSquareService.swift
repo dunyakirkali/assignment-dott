@@ -10,6 +10,7 @@ import Moya
 
 public enum FourSquareService {
     case searchVenues(ll: String)
+    case getVenueDetails(venueId: String)
 }
 
 extension FourSquareService: TargetType {
@@ -18,24 +19,29 @@ extension FourSquareService: TargetType {
         switch self {
         case .searchVenues:
             return "/venues/search"
+        case .getVenueDetails(let venueId):
+            return "/venues/\(venueId)"
         }
     }
     public var method: Moya.Method {
         switch self {
-        case .searchVenues:
+        case .searchVenues, .getVenueDetails:
             return .get
         }
     }
     public var task: Task {
+        var params: [String: Any] = [:]
+        params["client_id"] = "32RSLGTXVLWUR1PFJUEQCU0MGXPC51YQE4KYM5242N13PAPQ"
+        params["client_secret"] = "JNVBUT3T1JRRHOYEAASDSWQ4YYCXMRGKEI15NE1U2COFVEHL"
+        params["v"] = "20191216"
+
         switch self {
         case .searchVenues(let ll):
-            var params: [String: Any] = [:]
-            params["client_id"] = "32RSLGTXVLWUR1PFJUEQCU0MGXPC51YQE4KYM5242N13PAPQ"
-            params["client_secret"] = "JNVBUT3T1JRRHOYEAASDSWQ4YYCXMRGKEI15NE1U2COFVEHL"
             params["ll"] = ll
-            params["v"] = "20191216"
             params["limit"] = "50"
             params["categoryId"] = "4d4b7105d754a06374d81259"
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        case .getVenueDetails:
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
         }
     }
@@ -43,6 +49,9 @@ extension FourSquareService: TargetType {
         switch self {
         case .searchVenues:
             let asset = NSDataAsset(name: "venues", bundle: Bundle(for: FourSquareClient.self))!
+            return String(data: asset.data, encoding: .utf8)!.utf8Encoded
+        case .getVenueDetails:
+            let asset = NSDataAsset(name: "venue", bundle: Bundle(for: FourSquareClient.self))!
             return String(data: asset.data, encoding: .utf8)!.utf8Encoded
         }
     }
