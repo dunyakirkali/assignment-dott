@@ -8,6 +8,7 @@
 
 import XCTest
 import CoreLocation
+import dottDataKit
 @testable import dott
 
 class AppReducerTests: XCTestCase {
@@ -47,5 +48,33 @@ class AppReducerTests: XCTestCase {
         
         // THEN
         XCTAssertNil(resState.error)
+    }
+    
+    func testSetVenuesAction() {
+        // GIVEN
+        let location = FSLocation(lat: 30.0, lng: 4.4)
+        let venue = FSVenue(id: "id", name: "name", location: location)
+        let venues = [venue]
+        let appState = AppState()
+        
+        // WHEN
+        let resState = appReducer(action: SetVenues(venues: venues), state: appState)
+        
+        // THEN
+        XCTAssertEqual(resState.venues.count, 1)
+        XCTAssertEqual(resState.venues, venues)
+    }
+    
+    func testSetVenueAction() {
+        // GIVEN
+        let location = FSLocation(lat: 30.0, lng: 4.4)
+        let venue = FSVenue(id: "id", name: "name", location: location)
+        let appState = AppState()
+        
+        // WHEN
+        let resState = appReducer(action: SetVenue(venue: venue), state: appState)
+        
+        // THEN
+        XCTAssertEqual(resState.venue, venue)
     }
 }
