@@ -13,6 +13,7 @@ import Moya
 
 import dottDataKit
 
+// TODO: (dunyakirkali) Cover
 class RestaurantsViewController: UIViewController, StoryboardBased {
 
     // MARK: - Outlets
