@@ -43,12 +43,35 @@ func searchVenues(state: AppState, store: Store<AppState>) -> Action? {
                 )
             }
         case .failure:
-            break
-//                mainStore.dispatch(
-//                    ErrorOccurAction(error: AppError.networkError)
-//                )
+            mainStore.dispatch(
+                ErrorOccurAction(error: AppError.networkError)
+            )
         }
     }
 
     return nil
 }
+
+//func getVenueDetails(state: AppState, store: Store<AppState>) -> Action? {
+//    let provider = FourSquareClient.provider
+//        req = provider.request(.searchVenues(ll: query)) { result in
+//            switch result {
+//            case let .success(moyaResponse):
+//                do {
+//                    let data = moyaResponse.data
+//                    let result = try JSONDecoder().decode(FSResponse<FSVenue>.self, from: data)
+//                    
+//                    mainStore.dispatch(
+//                        SetVenue(venues: result.response.venue)
+//                    )
+//                }
+//                catch {
+//                    break
+//                }
+//            case .failure:
+//                break
+//            }
+//        }
+//
+//        return nil
+//}

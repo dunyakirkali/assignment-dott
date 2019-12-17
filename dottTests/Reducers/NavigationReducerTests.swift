@@ -42,4 +42,28 @@ class NavigationReducerTests: XCTestCase {
         // THEN
         XCTAssertEqual(resState.viewState, .details)
     }
+    
+    func testErrorOccurAction() {
+        // GIVEN
+        let appState = NavigationState()
+        let error = AppError.locationRetrievalFailed
+        
+        // WHEN
+        let resState = navigationReducer(action: ErrorOccurAction(error: error), state: appState)
+        
+        // THEN
+        XCTAssertEqual(resState.error, error)
+    }
+    
+    func testErrorSeenAction() {
+        // GIVEN
+        let error = AppError.locationRetrievalFailed
+        let appState = NavigationState(error: error, viewState: .map)
+        
+        // WHEN
+        let resState = navigationReducer(action: ErrorSeenAction(), state: appState)
+        
+        // THEN
+        XCTAssertNil(resState.error)
+    }
 }

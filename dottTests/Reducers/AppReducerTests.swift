@@ -26,30 +26,6 @@ class AppReducerTests: XCTestCase {
         XCTAssertEqual(resState.currentLocation, location)
     }
     
-    func testErrorOccurAction() {
-        // GIVEN
-        let appState = AppState()
-        let error = AppError.locationRetrievalFailed
-        
-        // WHEN
-        let resState = appReducer(action: ErrorOccurAction(error: error), state: appState)
-        
-        // THEN
-        XCTAssertEqual(resState.error, error)
-    }
-    
-    func testErrorSeenAction() {
-        // GIVEN
-        let error = AppError.locationRetrievalFailed
-        let appState = AppState(currentLocation: nil, venues: [], error: error)
-        
-        // WHEN
-        let resState = appReducer(action: ErrorSeenAction(), state: appState)
-        
-        // THEN
-        XCTAssertNil(resState.error)
-    }
-    
     func testSetVenuesAction() {
         // GIVEN
         let location = FSLocation(lat: 30.0, lng: 4.4)

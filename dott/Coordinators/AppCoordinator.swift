@@ -58,10 +58,9 @@ class AppCoordinator: StoreSubscriber {
     }
     
     func newState(state: NavigationState) {
-        // TODO: (dunyakirkali) Enable again
-//        if let error = state.error {
-//            show(error: error)
-//        }
+        if let error = state.error {
+            show(error: error)
+        }
         
         switch state.viewState {
         case .details:

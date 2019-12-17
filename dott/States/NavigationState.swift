@@ -9,6 +9,8 @@
 import ReSwift
 
 struct NavigationState: StateType {
+    /// Keeps the current app error
+    var error: AppError?
     /// Keeps the current VC
     var viewState: ViewState = .map
 }

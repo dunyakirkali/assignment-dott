@@ -14,6 +14,10 @@ func navigationReducer(action: Action, state: NavigationState?) -> NavigationSta
     switch action {
     case let action as NavigationAction:
         state.viewState = action.to
+    case let action as ErrorOccurAction:
+        state.error = action.error
+    case _ as ErrorSeenAction:
+        state.error = nil
     default:
         break
     }

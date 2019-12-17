@@ -15,8 +15,6 @@ struct AppState: StateType {
     var currentLocation: CLLocation?
     /// Keeps a list of visible Venues
     var venues: [FSVenue] = []
-    /// Keeps the current app error
-    var error: AppError?
     /// Navigation State
     var navigationState: NavigationState = NavigationState(viewState: .map)
     /// Client State
