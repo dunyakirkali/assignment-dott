@@ -84,6 +84,7 @@ extension RestaurantsViewController: MKMapViewDelegate {
         mainStore.dispatch(
             SeearchAction(query: "\(lat),\(lng)")
         )
+        // TODO: (dunyakirkali) Usee ReSwift-Thunk
         mainStore.dispatch(
             searchVenues
         )
