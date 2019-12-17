@@ -25,7 +25,7 @@ func searchVenues(state: AppState, store: Store<AppState>) -> Action? {
         r.cancel()
     }
 
-    let provider = MoyaProvider<FourSquareService>()
+    let provider = FourSquareClient.provider
     req = provider.request(.searchVenues(ll: query)) { result in
         switch result {
         case let .success(moyaResponse):

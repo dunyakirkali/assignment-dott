@@ -8,8 +8,8 @@
 
 import Moya
 
-class FourSquareClient: FourSquareClientProtocol {
-    static var provider: MoyaProvider<FourSquareService> {
+public class FourSquareClient: FourSquareClientProtocol {
+    public static var provider: MoyaProvider<FourSquareService> {
         return MoyaProvider<FourSquareService>()
     }
 }
