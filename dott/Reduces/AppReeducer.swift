@@ -27,6 +27,7 @@ func appReducer(action: Action, state: AppState?) -> AppState {
     }
     
     state.navigationState = navigationReducer(action: action, state: state.navigationState)
+    state.clientState = clientReducer(action: action, state: state.clientState)
 
     return state
 }

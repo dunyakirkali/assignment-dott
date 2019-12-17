@@ -1,0 +1,22 @@
+//
+//  ClientReducer.swift
+//  dott
+//
+//  Created by Dunya Kirkali on 17/12/2019.
+//  Copyright © 2019 Dunya Kirkali. All rights reserved.
+//
+
+import ReSwift
+
+func clientReducer(action: Action, state: ClientState?) -> ClientState {
+    var state = state ?? ClientState()
+
+    switch action {
+    case let action as SeearchAction:
+        state.query = action.query
+    default:
+        break
+    }
+
+    return state
+}

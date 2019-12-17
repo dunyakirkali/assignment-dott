@@ -19,6 +19,8 @@ struct AppState: StateType {
     var error: AppError?
     /// Navigation State
     var navigationState: NavigationState = NavigationState(viewState: .map)
+    /// Client State
+    var clientState: ClientState = ClientState()
     /// Selected venue
     var venue: FSVenue?
 }

@@ -10,6 +10,11 @@
 		0503BDDB23A83B6E004BA92B /* IdentifiableAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDDA23A83B6E004BA92B /* IdentifiableAnnotation.swift */; };
 		0503BDE123A96379004BA92B /* NavigationReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDE023A96379004BA92B /* NavigationReducerTests.swift */; };
 		0503BDE423A964D0004BA92B /* RestaurantDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDE323A964D0004BA92B /* RestaurantDetailsViewControllerTests.swift */; };
+		0503BDE723A96BC7004BA92B /* MockFourSquareClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDE623A96BC7004BA92B /* MockFourSquareClient.swift */; };
+		0503BDEA23A96C11004BA92B /* FourSquareClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDE923A96C11004BA92B /* FourSquareClientTests.swift */; };
+		0503BDEC23A96E70004BA92B /* ClientActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDEB23A96E70004BA92B /* ClientActions.swift */; };
+		0503BDEE23A96FB6004BA92B /* ClientState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDED23A96FB6004BA92B /* ClientState.swift */; };
+		0503BDF023A9700B004BA92B /* ClientReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDEF23A9700B004BA92B /* ClientReducer.swift */; };
 		05FCDBAC23A802950010E993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAB23A802950010E993 /* AppDelegate.swift */; };
 		05FCDBAE23A802950010E993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAD23A802950010E993 /* SceneDelegate.swift */; };
 		05FCDBB523A802960010E993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDBB423A802960010E993 /* Assets.xcassets */; };
@@ -109,6 +114,11 @@
 		0503BDDA23A83B6E004BA92B /* IdentifiableAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableAnnotation.swift; sourceTree = "<group>"; };
 		0503BDE023A96379004BA92B /* NavigationReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationReducerTests.swift; sourceTree = "<group>"; };
 		0503BDE323A964D0004BA92B /* RestaurantDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		0503BDE623A96BC7004BA92B /* MockFourSquareClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFourSquareClient.swift; sourceTree = "<group>"; };
+		0503BDE923A96C11004BA92B /* FourSquareClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareClientTests.swift; sourceTree = "<group>"; };
+		0503BDEB23A96E70004BA92B /* ClientActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientActions.swift; sourceTree = "<group>"; };
+		0503BDED23A96FB6004BA92B /* ClientState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientState.swift; sourceTree = "<group>"; };
+		0503BDEF23A9700B004BA92B /* ClientReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientReducer.swift; sourceTree = "<group>"; };
 		05FCDBA823A802950010E993 /* dott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBAB23A802950010E993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FCDBAD23A802950010E993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -222,6 +232,22 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		0503BDE523A96BA9004BA92B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0503BDE623A96BC7004BA92B /* MockFourSquareClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0503BDE823A96BFF004BA92B /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				0503BDE923A96C11004BA92B /* FourSquareClientTests.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
 		05FCDB9F23A802950010E993 = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +318,7 @@
 			children = (
 				05FCDC1A23A809960010E993 /* AppState.swift */,
 				05FCDC3B23A831130010E993 /* NavigationState.swift */,
+				0503BDED23A96FB6004BA92B /* ClientState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -301,6 +328,7 @@
 			children = (
 				05FCDC1C23A809B10010E993 /* AppActions.swift */,
 				05FCDC3D23A8319C0010E993 /* NavigationActions.swift */,
+				0503BDEB23A96E70004BA92B /* ClientActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -310,6 +338,7 @@
 			children = (
 				05FCDC1E23A809C70010E993 /* AppReeducer.swift */,
 				05FCDC3F23A831B40010E993 /* NavigationReducer.swift */,
+				0503BDEF23A9700B004BA92B /* ClientReducer.swift */,
 			);
 			path = Reduces;
 			sourceTree = "<group>";
@@ -331,6 +360,8 @@
 		05FCDBF623A806030010E993 /* dottDataKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				0503BDE823A96BFF004BA92B /* Client */,
+				0503BDE523A96BA9004BA92B /* Mocks */,
 				05FCDBF723A806030010E993 /* dottDataKitTests.swift */,
 				05FCDBF923A806030010E993 /* Info.plist */,
 			);
@@ -802,11 +833,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FCDC2423A80BF60010E993 /* AppCoordinator.swift in Sources */,
+				0503BDEE23A96FB6004BA92B /* ClientState.swift in Sources */,
 				05FCDC3C23A831130010E993 /* NavigationState.swift in Sources */,
 				0503BDDB23A83B6E004BA92B /* IdentifiableAnnotation.swift in Sources */,
 				05FCDC1923A8090A0010E993 /* RestaurantsViewController.swift in Sources */,
 				05FCDC1B23A809960010E993 /* AppState.swift in Sources */,
 				05FCDC1D23A809B10010E993 /* AppActions.swift in Sources */,
+				0503BDF023A9700B004BA92B /* ClientReducer.swift in Sources */,
+				0503BDEC23A96E70004BA92B /* ClientActions.swift in Sources */,
 				05FCDC4023A831B40010E993 /* NavigationReducer.swift in Sources */,
 				05FCDC4423A8339E0010E993 /* RestaurantDetailsViewController.swift in Sources */,
 				05FCDC3623A822AE0010E993 /* AppError.swift in Sources */,
@@ -857,6 +891,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FCDBF823A806030010E993 /* dottDataKitTests.swift in Sources */,
+				0503BDE723A96BC7004BA92B /* MockFourSquareClient.swift in Sources */,
+				0503BDEA23A96C11004BA92B /* FourSquareClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

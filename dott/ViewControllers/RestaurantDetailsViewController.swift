@@ -14,6 +14,8 @@ import dottDataKit
 
 class RestaurantDetailsViewController: UIViewController, StoryboardBased {
     
+    // MARK: - Outlets
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
 }

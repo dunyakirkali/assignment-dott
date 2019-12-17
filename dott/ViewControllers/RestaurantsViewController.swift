@@ -14,9 +14,7 @@ import Moya
 import dottDataKit
 
 class RestaurantsViewController: UIViewController, StoryboardBased {
-    
-    var req: Cancellable?
-    
+
     // MARK: - Outlets
 
     @IBOutlet weak var mapView: MKMapView! {
@@ -72,49 +70,22 @@ private extension RestaurantsViewController {
             mapView.addAnnotation(annotaion)
         }
     }
-    
-    // TODO: (dunyakirkali) Convert to action
-    func fetchVenues() {
+}
+
+// MARK: - MKMapViewDelegate
+extension RestaurantsViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let center = mapView.region.center
         
         let lat : NSNumber = NSNumber(value: center.latitude)
         let lng : NSNumber = NSNumber(value: center.longitude)
         
-        if let r = req {
-            r.cancel()
-        }
-        
-        let provider = MoyaProvider<FourSquareService>(plugins: [NetworkLoggerPlugin(verbose: true)])
-        req = provider.request(.searchVenues(ll: "\(lat),\(lng)")) { result in
-            switch result {
-            case let .success(moyaResponse):
-                do {
-                    let data = moyaResponse.data
-                    let result = try JSONDecoder().decode(FSResponse.self, from: data)
-                    
-                    mainStore.dispatch(
-                        SetVenues(venues: result.response.venues)
-                    )
-                }
-                catch {
-                    mainStore.dispatch(
-                        ErrorOccurAction(error: AppError.jsonError)
-                    )
-                }
-            case .failure:
-                break
-//                mainStore.dispatch(
-//                    ErrorOccurAction(error: AppError.networkError)
-//                )
-            }
-        }
-    }
-}
-
-// MARK: - MKMapViewDelegate
-extension RestaurantsViewController: MKMapViewDelegate {
-    func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-        fetchVenues()
+        mainStore.dispatch(
+            SeearchAction(query: "\(lat),\(lng)")
+        )
+        mainStore.dispatch(
+            searchVenues
+        )
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
