@@ -15,20 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="O45-NI-Dxr">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="mutedStandard" translatesAutoresizingMaskIntoConstraints="NO" id="O45-NI-Dxr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="O45-NI-Dxr" firstAttribute="leading" secondItem="vbM-4S-k2K" secondAttribute="leading" id="VFn-Jd-cGs"/>
-                            <constraint firstItem="vbM-4S-k2K" firstAttribute="top" secondItem="O45-NI-Dxr" secondAttribute="top" constant="44" id="fe4-L3-oM3"/>
-                            <constraint firstItem="vbM-4S-k2K" firstAttribute="trailing" secondItem="O45-NI-Dxr" secondAttribute="trailing" id="m14-6W-vfo"/>
-                            <constraint firstItem="O45-NI-Dxr" firstAttribute="bottom" secondItem="vbM-4S-k2K" secondAttribute="bottom" constant="34" id="vXb-tr-Ewq"/>
+                            <constraint firstItem="O45-NI-Dxr" firstAttribute="trailing" secondItem="vbM-4S-k2K" secondAttribute="trailing" id="Qbu-tG-b2w"/>
+                            <constraint firstAttribute="bottom" secondItem="O45-NI-Dxr" secondAttribute="bottom" id="Y7u-wc-qfi"/>
+                            <constraint firstItem="O45-NI-Dxr" firstAttribute="top" secondItem="dPV-kR-iSK" secondAttribute="top" id="Zrv-4u-E9x"/>
+                            <constraint firstItem="O45-NI-Dxr" firstAttribute="leading" secondItem="vbM-4S-k2K" secondAttribute="leading" id="mcd-Z0-dVg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vbM-4S-k2K"/>
                     </view>
-                    <navigationItem key="navigationItem" title="dott" id="Bsb-qu-ApS"/>
+                    <navigationItem key="navigationItem" title="dott" largeTitleDisplayMode="always" id="Bsb-qu-ApS"/>
                     <connections>
                         <outlet property="mapView" destination="O45-NI-Dxr" id="otZ-Al-8LY"/>
                     </connections>

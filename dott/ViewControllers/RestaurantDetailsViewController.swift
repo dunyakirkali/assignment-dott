@@ -33,10 +33,10 @@ extension RestaurantDetailsViewController {
         super.viewWillDisappear(animated)
         
         mainStore.dispatch(
-            SetVenue(venue: nil)
+            NavigationAction(to: .map)
         )
         mainStore.dispatch(
-            NavigationAction(to: .map)
+            SetVenue(venue: nil)
         )
 
         mainStore.unsubscribe(self)

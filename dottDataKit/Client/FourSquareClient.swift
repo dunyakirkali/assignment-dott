@@ -10,6 +10,6 @@ import Moya
 
 public class FourSquareClient: FourSquareClientProtocol {
     public static var provider: MoyaProvider<FourSquareService> {
-        return MoyaProvider<FourSquareService>()
+        return MoyaProvider<FourSquareService>(plugins: [NetworkLoggerPlugin(verbose: true)])
     }
 }

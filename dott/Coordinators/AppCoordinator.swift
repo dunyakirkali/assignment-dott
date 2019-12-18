@@ -20,9 +20,7 @@ class AppCoordinator: StoreSubscriber {
         mainStore.subscribe(self) {
             $0.select {
                 $0.navigationState
-            }.skip(when: { old, new in
-                old.viewState == new.viewState
-            })
+            }
         }
     }
     
@@ -36,8 +34,9 @@ class AppCoordinator: StoreSubscriber {
     }
     
     func showDetails() {
+        if rootViewController.visibleViewController is RestaurantDetailsViewController { return }
         let vc = RestaurantDetailsViewController.instantiate()
-        rootViewController.present(vc, animated: true, completion: nil)
+        rootViewController.pushViewController(vc, animated: true)
     }
     
     func show(error: Error) {

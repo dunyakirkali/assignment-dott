@@ -41,7 +41,6 @@ func searchVenues(state: AppState, store: Store<AppState>) -> Action? {
                 mainStore.dispatch(
                     ErrorOccurAction(error: AppError.jsonError)
                 )
-                break
             }
         case .failure:
 //            mainStore.dispatch(
@@ -69,11 +68,11 @@ func getVenueDetails(state: AppState, store: Store<AppState>) -> Action? {
                     SetVenue(venue: result.response.data)
                 )
             }
-            catch {
+            catch let error {
+                print(error)
                 mainStore.dispatch(
                     ErrorOccurAction(error: AppError.jsonError)
                 )
-//                break
             }
         case .failure:
 //            mainStore.dispatch(
