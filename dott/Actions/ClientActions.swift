@@ -77,7 +77,6 @@ func getVenueDetails(state: AppState, store: Store<AppState>) -> Action? {
                 )
             }
             catch let error {
-                print(error)
                 mainStore.dispatch(
                     ErrorOccurAction(error: AppError.rateError)
                 )
