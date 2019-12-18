@@ -13,7 +13,6 @@ import Moya
 
 import dottDataKit
 
-// TODO: (dunyakirkali) Cover
 class RestaurantsViewController: UIViewController, StoryboardBased {
 
     // MARK: - Outlets
@@ -84,7 +83,6 @@ extension RestaurantsViewController: MKMapViewDelegate {
         mainStore.dispatch(
             SeearchAction(query: "\(lat),\(lng)")
         )
-        // TODO: (dunyakirkali) Use ReSwift-Thunk
         mainStore.dispatch(
             searchVenues
         )

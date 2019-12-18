@@ -24,8 +24,6 @@ class RestaurantDetailsViewControllerTests: XCTestCase {
         vc.newState(state: appState)
         
         // THEN
-        // TODO: (dunyakirkali) Reenable tests
-//        XCTAssertNotNil(vc.imageView.kf.webURL)
         XCTAssertEqual(vc.nameLabel.text, venue.name)
     }
 }
