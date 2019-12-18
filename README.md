@@ -8,14 +8,14 @@ This assignment is a simple FourSquare API client which displays restaurants on 
 
 ## Getting Started
 
-0- In order to run the app you'll first need [Ruby](https://www.ruby-lang.org/en/) 2.4.1 or higher with the [bundler](https://bundler.io/) gem installed.
-1- Then you can run `bundle install` on the root of the project in order to get the ruby dependencies installed.
-2- Once the needed gems are installed then you can run `pod install` in order to get the app's dependencies.
-3- Configure the API KEY and API SECRET located in the [Release.xcconfig](https://github.com/dunyakirkali/assignment-dott/blob/master/dott/Configuration/Release.xcconfig) and replace the values with a key that doesn't have any quota limitations.
-4- And finally open `dott.xcworkspace`
-5-
-  a- Run the tests
-  b- Run the app
+- In order to run the app you'll first need [Ruby](https://www.ruby-lang.org/en/) 2.4.1 or higher with the [bundler](https://bundler.io/) gem installed.
+- Then you can run `bundle install` on the root of the project in order to get the ruby dependencies installed.
+- Once the needed gems are installed then you can run `pod install` in order to get the app's dependencies.
+- Configure the API KEY and API SECRET located in the [Release.xcconfig](https://github.com/dunyakirkali/assignment-dott/blob/master/dott/Configuration/Release.xcconfig) and replace the values with a key that doesn't have any quota limitations.
+- And finally open `dott.xcworkspace`
+- Have fun!
+  - Run the tests
+  - Run the app
 
 ## Tech
 
