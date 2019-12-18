@@ -19,11 +19,11 @@
 		0503BDF523AAB411004BA92B /* FSVenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF423AAB411004BA92B /* FSVenueTests.swift */; };
 		0503BDFA23AABA9A004BA92B /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF923AABA9A004BA92B /* AppCoordinatorTests.swift */; };
 		0503BDFD23AABDF4004BA92B /* MKMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDFC23AABDF4004BA92B /* MKMapViewExtensions.swift */; };
+		0503BE0223AAD212004BA92B /* MKMapViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BE0123AAD212004BA92B /* MKMapViewExtensionsTests.swift */; };
 		05FCDBAC23A802950010E993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAB23A802950010E993 /* AppDelegate.swift */; };
 		05FCDBAE23A802950010E993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAD23A802950010E993 /* SceneDelegate.swift */; };
 		05FCDBB523A802960010E993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDBB423A802960010E993 /* Assets.xcassets */; };
 		05FCDBB823A802960010E993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDBB623A802960010E993 /* LaunchScreen.storyboard */; };
-		05FCDBCE23A802960010E993 /* dottUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBCD23A802960010E993 /* dottUITests.swift */; };
 		05FCDBF123A806030010E993 /* dottDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCDBE823A806030010E993 /* dottDataKit.framework */; };
 		05FCDBF823A806030010E993 /* dottDataKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBF723A806030010E993 /* dottDataKitTests.swift */; };
 		05FCDBFA23A806030010E993 /* dottDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCDBEA23A806030010E993 /* dottDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,20 +56,12 @@
 		05FCDC4423A8339E0010E993 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDC4323A8339E0010E993 /* RestaurantDetailsViewController.swift */; };
 		07606B9BCF8947149539180C /* Pods_dottDataKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD64C4893CAA99E1A7E0B00 /* Pods_dottDataKitTests.framework */; };
 		0B3F2864319F8B7A82D3E16E /* Pods_dottTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5620A1CB0285F29552AF957B /* Pods_dottTests.framework */; };
-		1513EF11434240F87D8F22EE /* Pods_dott_dottUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1800B9880188CDFDC4FC4C /* Pods_dott_dottUITests.framework */; };
 		A273EDC394BD90D245118B89 /* Pods_dott.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5658C0DA48EF9CC5EF668164 /* Pods_dott.framework */; };
 		DEEDAA750EC19AED465E503C /* Pods_dottDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0342599B22D4BA54A8564678 /* Pods_dottDataKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		05FCDBBF23A802960010E993 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05FCDBA023A802950010E993 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 05FCDBA723A802950010E993;
-			remoteInfo = dott;
-		};
-		05FCDBCA23A802960010E993 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05FCDBA023A802950010E993 /* Project object */;
 			proxyType = 1;
@@ -128,6 +120,7 @@
 		0503BDF923AABA9A004BA92B /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 		0503BDFC23AABDF4004BA92B /* MKMapViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtensions.swift; sourceTree = "<group>"; };
 		0503BDFF23AACBD0004BA92B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		0503BE0123AAD212004BA92B /* MKMapViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtensionsTests.swift; sourceTree = "<group>"; };
 		05FCDBA823A802950010E993 /* dott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBAB23A802950010E993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FCDBAD23A802950010E993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,9 +129,6 @@
 		05FCDBB923A802960010E993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05FCDBBE23A802960010E993 /* dottTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dottTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBC423A802960010E993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05FCDBC923A802960010E993 /* dottUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dottUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		05FCDBCD23A802960010E993 /* dottUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dottUITests.swift; sourceTree = "<group>"; };
-		05FCDBCF23A802960010E993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05FCDBDF23A8053B0010E993 /* FSVenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSVenue.swift; sourceTree = "<group>"; };
 		05FCDBE123A805690010E993 /* FSLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSLocation.swift; sourceTree = "<group>"; };
 		05FCDBE823A806030010E993 /* dottDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dottDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,14 +192,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B3F2864319F8B7A82D3E16E /* Pods_dottTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05FCDBC623A802960010E993 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1513EF11434240F87D8F22EE /* Pods_dott_dottUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +271,19 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		0503BE0023AAD202004BA92B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0503BE0123AAD212004BA92B /* MKMapViewExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		05FCDB9F23A802950010E993 = {
 			isa = PBXGroup;
 			children = (
 				05FCDBAA23A802950010E993 /* dott */,
 				05FCDBC123A802960010E993 /* dottTests */,
-				05FCDBCC23A802960010E993 /* dottUITests */,
 				05FCDBE923A806030010E993 /* dottDataKit */,
 				05FCDBF623A806030010E993 /* dottDataKitTests */,
 				05FCDBA923A802950010E993 /* Products */,
@@ -308,7 +297,6 @@
 			children = (
 				05FCDBA823A802950010E993 /* dott.app */,
 				05FCDBBE23A802960010E993 /* dottTests.xctest */,
-				05FCDBC923A802960010E993 /* dottUITests.xctest */,
 				05FCDBE823A806030010E993 /* dottDataKit.framework */,
 				05FCDBF023A806030010E993 /* dottDataKitTests.xctest */,
 			);
@@ -339,6 +327,7 @@
 		05FCDBC123A802960010E993 /* dottTests */ = {
 			isa = PBXGroup;
 			children = (
+				0503BE0023AAD202004BA92B /* Extensions */,
 				0503BDF823AABA8D004BA92B /* Coordinators */,
 				0503BDE223A964BF004BA92B /* ViewControllers */,
 				05FCDC3023A820150010E993 /* Reducers */,
@@ -346,15 +335,6 @@
 				05FCDBC423A802960010E993 /* Info.plist */,
 			);
 			path = dottTests;
-			sourceTree = "<group>";
-		};
-		05FCDBCC23A802960010E993 /* dottUITests */ = {
-			isa = PBXGroup;
-			children = (
-				05FCDBCD23A802960010E993 /* dottUITests.swift */,
-				05FCDBCF23A802960010E993 /* Info.plist */,
-			);
-			path = dottUITests;
 			sourceTree = "<group>";
 		};
 		05FCDBDB23A8049B0010E993 /* States */ = {
@@ -571,26 +551,6 @@
 			productReference = 05FCDBBE23A802960010E993 /* dottTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		05FCDBC823A802960010E993 /* dottUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 05FCDBD823A802960010E993 /* Build configuration list for PBXNativeTarget "dottUITests" */;
-			buildPhases = (
-				1CF0DF8ABE8699EB9E56516C /* [CP] Check Pods Manifest.lock */,
-				05FCDBC523A802960010E993 /* Sources */,
-				05FCDBC623A802960010E993 /* Frameworks */,
-				05FCDBC723A802960010E993 /* Resources */,
-				FFBC4079C133496C330B34D6 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				05FCDBCB23A802960010E993 /* PBXTargetDependency */,
-			);
-			name = dottUITests;
-			productName = dottUITests;
-			productReference = 05FCDBC923A802960010E993 /* dottUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		05FCDBE723A806030010E993 /* dottDataKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05FCDBFF23A806030010E993 /* Build configuration list for PBXNativeTarget "dottDataKit" */;
@@ -647,10 +607,6 @@
 						CreatedOnToolsVersion = 11.3;
 						TestTargetID = 05FCDBA723A802950010E993;
 					};
-					05FCDBC823A802960010E993 = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 05FCDBA723A802950010E993;
-					};
 					05FCDBE723A806030010E993 = {
 						CreatedOnToolsVersion = 11.3;
 						LastSwiftMigration = 1130;
@@ -676,7 +632,6 @@
 			targets = (
 				05FCDBA723A802950010E993 /* dott */,
 				05FCDBBD23A802960010E993 /* dottTests */,
-				05FCDBC823A802960010E993 /* dottUITests */,
 				05FCDBE723A806030010E993 /* dottDataKit */,
 				05FCDBEF23A806030010E993 /* dottDataKitTests */,
 			);
@@ -696,13 +651,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		05FCDBBC23A802960010E993 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05FCDBC723A802960010E993 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -771,28 +719,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1CF0DF8ABE8699EB9E56516C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-dott-dottUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		693BB4E3F227DFFE822790E6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -854,23 +780,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FFBC4079C133496C330B34D6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-dott-dottUITests/Pods-dott-dottUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-dott-dottUITests/Pods-dott-dottUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dott-dottUITests/Pods-dott-dottUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -905,16 +814,9 @@
 				0503BDFA23AABA9A004BA92B /* AppCoordinatorTests.swift in Sources */,
 				05FCDC3223A820260010E993 /* AppReducerTests.swift in Sources */,
 				05FCDC3823A823990010E993 /* AppErrorTests.swift in Sources */,
+				0503BE0223AAD212004BA92B /* MKMapViewExtensionsTests.swift in Sources */,
 				0503BDE423A964D0004BA92B /* RestaurantDetailsViewControllerTests.swift in Sources */,
 				0503BDE123A96379004BA92B /* NavigationReducerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05FCDBC523A802960010E993 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05FCDBCE23A802960010E993 /* dottUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -953,11 +855,6 @@
 			isa = PBXTargetDependency;
 			target = 05FCDBA723A802950010E993 /* dott */;
 			targetProxy = 05FCDBBF23A802960010E993 /* PBXContainerItemProxy */;
-		};
-		05FCDBCB23A802960010E993 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 05FCDBA723A802950010E993 /* dott */;
-			targetProxy = 05FCDBCA23A802960010E993 /* PBXContainerItemProxy */;
 		};
 		05FCDBF323A806030010E993 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1190,48 +1087,6 @@
 			};
 			name = Release;
 		};
-		05FCDBD923A802960010E993 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40E444A5D86BEF7E7F5F3CC0 /* Pods-dott-dottUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RMWQMGE5WJ;
-				INFOPLIST_FILE = dottUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.dottUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = dott;
-			};
-			name = Debug;
-		};
-		05FCDBDA23A802960010E993 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C541AB6F210D06DC14B638D /* Pods-dott-dottUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RMWQMGE5WJ;
-				INFOPLIST_FILE = dottUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.dottUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = dott;
-			};
-			name = Release;
-		};
 		05FCDC0023A806030010E993 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 754E0F04DE5D7A2644742A9D /* Pods-dottDataKit.debug.xcconfig */;
@@ -1359,15 +1214,6 @@
 			buildConfigurations = (
 				05FCDBD623A802960010E993 /* Debug */,
 				05FCDBD723A802960010E993 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		05FCDBD823A802960010E993 /* Build configuration list for PBXNativeTarget "dottUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				05FCDBD923A802960010E993 /* Debug */,
-				05FCDBDA23A802960010E993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

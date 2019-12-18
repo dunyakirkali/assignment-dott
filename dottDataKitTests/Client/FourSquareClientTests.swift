@@ -19,7 +19,7 @@ class FourSquareClientTests: XCTestCase {
         
         let provider = MockFourSquareClient.provider
         
-        provider.request(.searchVenues(ll: "0,0")) { result in
+        provider.request(.searchVenues(ll: "0,0", sw: "0,0", ne: "0,0")) { result in
             switch result {
             case let .success(moyaResponse):
                 do {
