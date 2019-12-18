@@ -15,21 +15,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ao4-9B-VRQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ao4-9B-VRQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gKW-5n-68g">
                                 <rect key="frame" x="20" y="429" width="374" height="413"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSS-M8-aMh">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="194.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="208"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lv-cn-2yM">
-                                        <rect key="frame" x="0.0" y="214.5" width="374" height="198.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="228" width="374" height="185"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -60,4 +60,7 @@
             <point key="canvasLocation" x="-39.130434782608695" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Placeholder" width="2800" height="800"/>
+    </resources>
 </document>
