@@ -18,6 +18,7 @@ class RestaurantDetailsViewController: UIViewController, StoryboardBased {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
 }
 
 // MARK: - View Lifecycle
@@ -53,8 +54,11 @@ extension RestaurantDetailsViewController: StoreSubscriber {
 
 private extension RestaurantDetailsViewController {
     func reloadData(for venue: FSVenue) {
-        let url = URL(string: venue.imageURL)
-        imageView.kf.setImage(with: url)
+        if let urlString = venue.imageURL {
+            let placeholderImage = UIImage(named: "Placeholder")
+            imageView.kf.setImage(with: URL(string: urlString), placeholder: placeholderImage)
+        }
         nameLabel.text = venue.name
+        descriptionLabel.text = venue.description
     }
 }

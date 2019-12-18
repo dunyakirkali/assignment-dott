@@ -6,7 +6,7 @@
 //  Copyright © 2019 Dunya Kirkali. All rights reserved.
 //
 
-public struct FSResponse: Decodable {
+public struct FSResponse<T: Decodable>: Decodable {
     let meta: FSMeta
-    public let response: FSResponseBody
+    public let response: FSResponseBody<T>
 }

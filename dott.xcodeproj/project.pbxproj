@@ -15,6 +15,7 @@
 		0503BDEC23A96E70004BA92B /* ClientActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDEB23A96E70004BA92B /* ClientActions.swift */; };
 		0503BDEE23A96FB6004BA92B /* ClientState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDED23A96FB6004BA92B /* ClientState.swift */; };
 		0503BDF023A9700B004BA92B /* ClientReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDEF23A9700B004BA92B /* ClientReducer.swift */; };
+		0503BDF223AA8D5B004BA92B /* FSPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF123AA8D5B004BA92B /* FSPhoto.swift */; };
 		05FCDBAC23A802950010E993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAB23A802950010E993 /* AppDelegate.swift */; };
 		05FCDBAE23A802950010E993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAD23A802950010E993 /* SceneDelegate.swift */; };
 		05FCDBB523A802960010E993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDBB423A802960010E993 /* Assets.xcassets */; };
@@ -119,6 +120,7 @@
 		0503BDEB23A96E70004BA92B /* ClientActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientActions.swift; sourceTree = "<group>"; };
 		0503BDED23A96FB6004BA92B /* ClientState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientState.swift; sourceTree = "<group>"; };
 		0503BDEF23A9700B004BA92B /* ClientReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientReducer.swift; sourceTree = "<group>"; };
+		0503BDF123AA8D5B004BA92B /* FSPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSPhoto.swift; sourceTree = "<group>"; };
 		05FCDBA823A802950010E993 /* dott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBAB23A802950010E993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FCDBAD23A802950010E993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				05FCDBE123A805690010E993 /* FSLocation.swift */,
 				05FCDC2B23A815670010E993 /* FSMeta.swift */,
 				05FCDC3923A8268F0010E993 /* FSResponseBody.swift */,
+				0503BDF123AA8D5B004BA92B /* FSPhoto.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -883,6 +886,7 @@
 				05FCDC0923A806C00010E993 /* FourSquareService.swift in Sources */,
 				05FCDC0C23A807400010E993 /* FourSquareClient.swift in Sources */,
 				05FCDC2823A80F050010E993 /* FSLocation.swift in Sources */,
+				0503BDF223AA8D5B004BA92B /* FSPhoto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
