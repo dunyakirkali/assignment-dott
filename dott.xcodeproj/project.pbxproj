@@ -17,6 +17,7 @@
 		0503BDF023A9700B004BA92B /* ClientReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDEF23A9700B004BA92B /* ClientReducer.swift */; };
 		0503BDF223AA8D5B004BA92B /* FSPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF123AA8D5B004BA92B /* FSPhoto.swift */; };
 		0503BDF523AAB411004BA92B /* FSVenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF423AAB411004BA92B /* FSVenueTests.swift */; };
+		0503BDFA23AABA9A004BA92B /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF923AABA9A004BA92B /* AppCoordinatorTests.swift */; };
 		05FCDBAC23A802950010E993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAB23A802950010E993 /* AppDelegate.swift */; };
 		05FCDBAE23A802950010E993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAD23A802950010E993 /* SceneDelegate.swift */; };
 		05FCDBB523A802960010E993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDBB423A802960010E993 /* Assets.xcassets */; };
@@ -123,6 +124,7 @@
 		0503BDEF23A9700B004BA92B /* ClientReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientReducer.swift; sourceTree = "<group>"; };
 		0503BDF123AA8D5B004BA92B /* FSPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSPhoto.swift; sourceTree = "<group>"; };
 		0503BDF423AAB411004BA92B /* FSVenueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSVenueTests.swift; sourceTree = "<group>"; };
+		0503BDF923AABA9A004BA92B /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 		05FCDBA823A802950010E993 /* dott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBAB23A802950010E993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FCDBAD23A802950010E993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -260,6 +262,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0503BDF823AABA8D004BA92B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				0503BDF923AABA9A004BA92B /* AppCoordinatorTests.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		05FCDB9F23A802950010E993 = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +318,7 @@
 		05FCDBC123A802960010E993 /* dottTests */ = {
 			isa = PBXGroup;
 			children = (
+				0503BDF823AABA8D004BA92B /* Coordinators */,
 				0503BDE223A964BF004BA92B /* ViewControllers */,
 				05FCDC3023A820150010E993 /* Reducers */,
 				05FCDC3723A823990010E993 /* AppErrorTests.swift */,
@@ -869,6 +880,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0503BDFA23AABA9A004BA92B /* AppCoordinatorTests.swift in Sources */,
 				05FCDC3223A820260010E993 /* AppReducerTests.swift in Sources */,
 				05FCDC3823A823990010E993 /* AppErrorTests.swift in Sources */,
 				0503BDE423A964D0004BA92B /* RestaurantDetailsViewControllerTests.swift in Sources */,
