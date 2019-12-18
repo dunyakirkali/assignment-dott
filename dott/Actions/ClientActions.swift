@@ -19,6 +19,10 @@ struct SearchAction: Action {
     let ne: String
 }
 
+enum ErrorCodes: Int {
+    case cancelled = 6
+}
+
 func searchVenues(state: AppState, store: Store<AppState>) -> Action? {
     
     guard
@@ -50,11 +54,12 @@ func searchVenues(state: AppState, store: Store<AppState>) -> Action? {
                     ErrorOccurAction(error: AppError.rateError)
                 )
             }
-        case .failure:
-//            mainStore.dispatch(
-//                ErrorOccurAction(error: AppError.networkError)
-//            )
-            break
+        case .failure(let error):
+            if error.errorCode != ErrorCodes.cancelled.rawValue {
+                mainStore.dispatch(
+                    ErrorOccurAction(error: AppError.networkError)
+                )
+            }
         }
         req = nil
     }
@@ -76,16 +81,15 @@ func getVenueDetails(state: AppState, store: Store<AppState>) -> Action? {
                     SetVenue(venue: result.response.data)
                 )
             }
-            catch let error {
+            catch {
                 mainStore.dispatch(
                     ErrorOccurAction(error: AppError.rateError)
                 )
             }
-        case .failure:
-//            mainStore.dispatch(
-//                ErrorOccurAction(error: AppError.networkError)
-//            )
-            break
+        case .failure(let error):
+            mainStore.dispatch(
+                ErrorOccurAction(error: AppError.networkError)
+            )
         }
     }
 
