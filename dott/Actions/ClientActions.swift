@@ -39,7 +39,7 @@ func searchVenues(state: AppState, store: Store<AppState>) -> Action? {
             }
             catch {
                 mainStore.dispatch(
-                    ErrorOccurAction(error: AppError.jsonError)
+                    ErrorOccurAction(error: AppError.rateError)
                 )
             }
         case .failure:
@@ -71,7 +71,7 @@ func getVenueDetails(state: AppState, store: Store<AppState>) -> Action? {
             catch let error {
                 print(error)
                 mainStore.dispatch(
-                    ErrorOccurAction(error: AppError.jsonError)
+                    ErrorOccurAction(error: AppError.rateError)
                 )
             }
         case .failure:

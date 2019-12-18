@@ -11,7 +11,7 @@ import Foundation
 enum AppError: Error, CaseIterable {
     case locationRetrievalFailed
     case networkError
-    case jsonError
+    case rateError
 }
 
 extension AppError: LocalizedError {
@@ -21,8 +21,8 @@ extension AppError: LocalizedError {
             return "Failed to retrieve location!"
         case .networkError:
             return "Something went wrong! Please try again later."
-        case .jsonError:
-            return "Couldn't parse JSON."
+        case .rateError:
+            return "Rate limit reached!"
         }
     }
 }
