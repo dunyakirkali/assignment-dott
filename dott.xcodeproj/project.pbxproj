@@ -16,6 +16,7 @@
 		0503BDEE23A96FB6004BA92B /* ClientState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDED23A96FB6004BA92B /* ClientState.swift */; };
 		0503BDF023A9700B004BA92B /* ClientReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDEF23A9700B004BA92B /* ClientReducer.swift */; };
 		0503BDF223AA8D5B004BA92B /* FSPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF123AA8D5B004BA92B /* FSPhoto.swift */; };
+		0503BDF523AAB411004BA92B /* FSVenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF423AAB411004BA92B /* FSVenueTests.swift */; };
 		05FCDBAC23A802950010E993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAB23A802950010E993 /* AppDelegate.swift */; };
 		05FCDBAE23A802950010E993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAD23A802950010E993 /* SceneDelegate.swift */; };
 		05FCDBB523A802960010E993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDBB423A802960010E993 /* Assets.xcassets */; };
@@ -121,6 +122,7 @@
 		0503BDED23A96FB6004BA92B /* ClientState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientState.swift; sourceTree = "<group>"; };
 		0503BDEF23A9700B004BA92B /* ClientReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientReducer.swift; sourceTree = "<group>"; };
 		0503BDF123AA8D5B004BA92B /* FSPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSPhoto.swift; sourceTree = "<group>"; };
+		0503BDF423AAB411004BA92B /* FSVenueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSVenueTests.swift; sourceTree = "<group>"; };
 		05FCDBA823A802950010E993 /* dott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBAB23A802950010E993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FCDBAD23A802950010E993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -250,6 +252,14 @@
 			path = Client;
 			sourceTree = "<group>";
 		};
+		0503BDF323AAB400004BA92B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0503BDF423AAB411004BA92B /* FSVenueTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		05FCDB9F23A802950010E993 = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +372,7 @@
 		05FCDBF623A806030010E993 /* dottDataKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				0503BDF323AAB400004BA92B /* Models */,
 				0503BDE823A96BFF004BA92B /* Client */,
 				0503BDE523A96BA9004BA92B /* Mocks */,
 				05FCDBF723A806030010E993 /* dottDataKitTests.swift */,
@@ -894,6 +905,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0503BDF523AAB411004BA92B /* FSVenueTests.swift in Sources */,
 				05FCDBF823A806030010E993 /* dottDataKitTests.swift in Sources */,
 				0503BDE723A96BC7004BA92B /* MockFourSquareClient.swift in Sources */,
 				0503BDEA23A96C11004BA92B /* FourSquareClientTests.swift in Sources */,

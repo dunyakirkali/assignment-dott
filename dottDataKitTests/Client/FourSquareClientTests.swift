@@ -24,12 +24,12 @@ class FourSquareClientTests: XCTestCase {
             case let .success(moyaResponse):
                 do {
                     let data = moyaResponse.data
-                    let result = try JSONDecoder().decode(FSResponse.self, from: data)
+                    let result = try JSONDecoder().decode(FSResponse<[FSVenue]>.self, from: data)
             
                     completedExpectation.fulfill()
                     
                     if
-                        let venue = result.response.venues.first,
+                        let venue = result.response.data.first,
                         venue.name == "Mr. Purple" {
                         venueNameExpectation.fulfill()
                     }
