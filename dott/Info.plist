@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>API_CLIENT_ID</key>
+	<string>$(API_CLIENT_ID)</string>
+	<key>API_CLIENT_SECRET</key>
+	<string>$(API_CLIENT_SECRET)</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app would like to access your location in order to provide you with the best experience</string>
 	<key>CFBundleDevelopmentRegion</key>

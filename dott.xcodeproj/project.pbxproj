@@ -127,6 +127,7 @@
 		0503BDF423AAB411004BA92B /* FSVenueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSVenueTests.swift; sourceTree = "<group>"; };
 		0503BDF923AABA9A004BA92B /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 		0503BDFC23AABDF4004BA92B /* MKMapViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtensions.swift; sourceTree = "<group>"; };
+		0503BDFF23AACBD0004BA92B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		05FCDBA823A802950010E993 /* dott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBAB23A802950010E993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FCDBAD23A802950010E993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -280,6 +281,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0503BDFE23AACBB7004BA92B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				0503BDFF23AACBD0004BA92B /* Release.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		05FCDB9F23A802950010E993 = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +318,7 @@
 		05FCDBAA23A802950010E993 /* dott */ = {
 			isa = PBXGroup;
 			children = (
+				0503BDFE23AACBB7004BA92B /* Configuration */,
 				0503BDFB23AABDE4004BA92B /* Extensions */,
 				05FCDC2223A80BE50010E993 /* Coordinators */,
 				05FCDC1523A808D70010E993 /* ViewControllers */,
@@ -980,6 +990,7 @@
 /* Begin XCBuildConfiguration section */
 		05FCDBD023A802960010E993 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0503BDFF23AACBD0004BA92B /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1040,6 +1051,7 @@
 		};
 		05FCDBD123A802960010E993 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0503BDFF23AACBD0004BA92B /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

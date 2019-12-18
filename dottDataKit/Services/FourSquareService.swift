@@ -31,9 +31,8 @@ extension FourSquareService: TargetType {
     }
     public var task: Task {
         var params: [String: Any] = [:]
-        // TODO: (dunyakirkali) Move to configuration
-        params["client_id"] = "32RSLGTXVLWUR1PFJUEQCU0MGXPC51YQE4KYM5242N13PAPQ"
-        params["client_secret"] = "JNVBUT3T1JRRHOYEAASDSWQ4YYCXMRGKEI15NE1U2COFVEHL"
+        params["client_id"] = config!["API_CLIENT_ID"]
+        params["client_secret"] = config!["API_CLIENT_SECRET"]
         params["v"] = "20191216"
 
         switch self {
@@ -61,5 +60,14 @@ extension FourSquareService: TargetType {
     }
     public var headers: [String: String]? {
         return ["Content-type": "application/json"]
+    }
+}
+
+private extension FourSquareService {
+    var config: NSDictionary? {
+        if let path = Bundle.main.path(forResource: "Info", ofType: "plist") {
+           return NSDictionary(contentsOfFile: path)
+        }
+        return nil
     }
 }
