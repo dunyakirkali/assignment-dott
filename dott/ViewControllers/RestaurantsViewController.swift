@@ -55,7 +55,10 @@ extension RestaurantsViewController: StoreSubscriber {
 private extension RestaurantsViewController {
     func focusOnUserLocation() {
         if let location = mainStore.state.currentLocation {
-            mapView.setCenter(location.coordinate, animated: true)
+            mapView.setRegion(
+                MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 200, longitudinalMeters: 200),
+                animated: true
+            )
         }
     }
 
@@ -76,12 +79,15 @@ private extension RestaurantsViewController {
 extension RestaurantsViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let center = mapView.region.center
-        
-        let lat : NSNumber = NSNumber(value: center.latitude)
-        let lng : NSNumber = NSNumber(value: center.longitude)
+        let sw = mapView.southWestCoordinate
+        let ne = mapView.northEastCoordinate
         
         mainStore.dispatch(
-            SeearchAction(query: "\(lat),\(lng)")
+            SearchAction(
+                query: "\(center.latitude),\(center.longitude)",
+                sw: "\(sw.latitude),\(sw.longitude)",
+                ne: "\(ne.latitude),\(ne.longitude)"
+            )
         )
         mainStore.dispatch(
             searchVenues

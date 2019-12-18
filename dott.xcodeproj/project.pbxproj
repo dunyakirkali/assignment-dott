@@ -18,6 +18,7 @@
 		0503BDF223AA8D5B004BA92B /* FSPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF123AA8D5B004BA92B /* FSPhoto.swift */; };
 		0503BDF523AAB411004BA92B /* FSVenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF423AAB411004BA92B /* FSVenueTests.swift */; };
 		0503BDFA23AABA9A004BA92B /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDF923AABA9A004BA92B /* AppCoordinatorTests.swift */; };
+		0503BDFD23AABDF4004BA92B /* MKMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503BDFC23AABDF4004BA92B /* MKMapViewExtensions.swift */; };
 		05FCDBAC23A802950010E993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAB23A802950010E993 /* AppDelegate.swift */; };
 		05FCDBAE23A802950010E993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCDBAD23A802950010E993 /* SceneDelegate.swift */; };
 		05FCDBB523A802960010E993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FCDBB423A802960010E993 /* Assets.xcassets */; };
@@ -125,6 +126,7 @@
 		0503BDF123AA8D5B004BA92B /* FSPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSPhoto.swift; sourceTree = "<group>"; };
 		0503BDF423AAB411004BA92B /* FSVenueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSVenueTests.swift; sourceTree = "<group>"; };
 		0503BDF923AABA9A004BA92B /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		0503BDFC23AABDF4004BA92B /* MKMapViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtensions.swift; sourceTree = "<group>"; };
 		05FCDBA823A802950010E993 /* dott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FCDBAB23A802950010E993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FCDBAD23A802950010E993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -270,6 +272,14 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		0503BDFB23AABDE4004BA92B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0503BDFC23AABDF4004BA92B /* MKMapViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		05FCDB9F23A802950010E993 = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +309,7 @@
 		05FCDBAA23A802950010E993 /* dott */ = {
 			isa = PBXGroup;
 			children = (
+				0503BDFB23AABDE4004BA92B /* Extensions */,
 				05FCDC2223A80BE50010E993 /* Coordinators */,
 				05FCDC1523A808D70010E993 /* ViewControllers */,
 				05FCDBDB23A8049B0010E993 /* States */,
@@ -857,6 +868,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0503BDFD23AABDF4004BA92B /* MKMapViewExtensions.swift in Sources */,
 				05FCDC2423A80BF60010E993 /* AppCoordinator.swift in Sources */,
 				0503BDEE23A96FB6004BA92B /* ClientState.swift in Sources */,
 				05FCDC3C23A831130010E993 /* NavigationState.swift in Sources */,

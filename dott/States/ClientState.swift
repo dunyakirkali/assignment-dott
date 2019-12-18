@@ -11,4 +11,8 @@ import ReSwift
 struct ClientState: StateType {
     /// Keeps the search query
     var query: String?
+    /// Keeps the bounding box left bottom corner
+    var sw: String?
+    /// Keeps the bounding box right top corner
+    var ne: String?
 }

@@ -12,8 +12,10 @@ func clientReducer(action: Action, state: ClientState?) -> ClientState {
     var state = state ?? ClientState()
 
     switch action {
-    case let action as SeearchAction:
+    case let action as SearchAction:
         state.query = action.query
+        state.ne = action.ne
+        state.sw = action.sw
     default:
         break
     }

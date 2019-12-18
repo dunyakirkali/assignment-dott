@@ -13,20 +13,28 @@ import dottDataKit
 
 var req: Cancellable?
 
-struct SeearchAction: Action {
+struct SearchAction: Action {
     let query: String
+    let sw: String
+    let ne: String
 }
 
 func searchVenues(state: AppState, store: Store<AppState>) -> Action? {
     
-    guard let query = state.clientState.query else { return nil }
+    guard
+        let query = state.clientState.query,
+        let sw = state.clientState.sw,
+        let ne = state.clientState.ne
+    else {
+        return nil
+    }
     
     if let r = req {
         r.cancel()
     }
 
     let provider = FourSquareClient.provider
-    req = provider.request(.searchVenues(ll: query)) { result in
+    req = provider.request(.searchVenues(ll: query, sw: sw, ne: ne)) { result in
         switch result {
         case let .success(moyaResponse):
             do {
