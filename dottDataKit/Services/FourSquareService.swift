@@ -38,7 +38,7 @@ extension FourSquareService: TargetType {
         switch self {
         case .searchVenues(let ll):
             params["ll"] = ll
-            params["limit"] = "50"
+            params["limit"] = 50
             params["categoryId"] = "4d4b7105d754a06374d81259"
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
         case .getVenueDetails:
